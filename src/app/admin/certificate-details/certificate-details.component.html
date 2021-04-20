@@ -1,0 +1,84 @@
+<div class="main">
+    <mat-card>
+        <mat-card-header class="header">
+            <mat-card-title>Certificate Form</mat-card-title>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <mat-card-content>
+            <form class="example-form" [formGroup]="certificateForm">
+               
+                <table class="example-full-width" cellspacing="0">
+                    <tr>
+                        <td>
+                            <mat-form-field appearance="outline" style="width:60vh" class="example-full-width">
+                                 <mat-label>Fullname</mat-label>  
+                                <input matInput placeholder="Fullname" [(ngModel)]="certificateObj.fullName" name="fullName" formControlName="fullName"required>
+                            </mat-form-field> 
+    
+                            <!-- <mat-form-field appearance="outline" style="width:30vh" class="example-full-width">
+                            <mat-label>Certificate Number</mat-label>
+                                <input matInput placeholder="Certificatenumber" [(ngModel)]="centerObj.certificateNumber" name="certificateNumber" required>
+                               </mat-form-field> -->
+                               <!-- <mat-form-field class="example-full-width">
+                                <input matInput placeholder="Username" [(ngModel)]="adminObj.username" name="username" required>
+                            </mat-form-field> -->
+    
+    
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                            <mat-form-field appearance="outline" style="width:60vh" class="example-full-width">
+                                <mat-label>Course</mat-label>
+                                <input matInput placeholder="Course" [(ngModel)]="certificateObj.course" name="course" formControlName="course" required>
+                            </mat-form-field> 
+                                <!-- <mat-select>
+                                    <mat-option *ngFor="let course of courses" [value]="course.coursesName">
+                                        {{course.coursesName}}
+                                    </mat-option>
+                                </mat-select>
+                            
+                            </mat-form-field>   -->
+                       
+                            <!-- <mat-form-field appearance="outline" style="width:40vh" class="example-full-width">
+                                <mat-label>Select Type</mat-label>
+                               
+                                <mat-select>
+                                    <mat-option value="option">Student</mat-option>
+                                    <mat-option value="option">Employee</mat-option>
+                                </mat-select>
+    
+                            </mat-form-field> -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field appearance="outline" style="width:40vh" class="example-full-width">
+                                <mat-label>StartDate</mat-label>
+                                <input matInput placeholder="StartDate" [(ngModel)]="certificateObj.startDate" type="date" name="duration" formControlName="startDate" required>
+                            </mat-form-field> &nbsp;
+                       
+                            <mat-form-field appearance="outline" style="width:40vh" class="example-full-width">
+                                <mat-label>EndDate</mat-label>
+                                <input matInput placeholder="EndDate" [(ngModel)]="certificateObj.endDate" type="date" name="duration" formControlName="endDate" required>
+                            </mat-form-field>
+                            
+                        </td>
+                    </tr>
+                </table>
+                
+        <div class="buttons">
+            <mat-card-actions>
+                <button mat-flat-button (click)="submit()" type="submit" color="primary">Submit</button>
+            </mat-card-actions>
+            </div>
+            </form>
+        </mat-card-content>
+        
+    </mat-card>
+    </div>
+    
+    
+    
+    

@@ -1,0 +1,189 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')" (closed)="events.push('close!')">
+
+        <div class="header">
+            <button mat-button class="rec-menu mt-30" (click)="createCertificate()">
+            <span class="color-grey">Create Certificate</span>
+            </button>
+            <br>
+            <button mat-button class="rec-menu mt-30" (click)="createDesignation()">
+                <span class="color-grey">Create Designation</span>
+                </button>
+                <br>
+            <button mat-button class="rec-menu mt-30" (click)="generateStudents()">
+                <span class="color-grey">Generate Student</span>
+                </button>
+            <br>
+            <button mat-button class="rec-menu mt-30" (click)="generateFaculty()">
+                    <span class="color-grey">Generate faculty</span>
+                    </button>
+            <br>
+            <button mat-button class="rec-menu mt-30" (click)="generateCounsellor()">
+                <span class="color-grey">Generate Counsellor</span>
+                </button>
+            <br>
+           <button mat-button class="rec-menu mt-30" (click)="createStudentAttendence()">
+            <span class="color-grey">Create Student Attendence</span>
+            </button>
+           
+         <br>
+        <button mat-button class="rec-menu mt-30" (click)="createBlog()">
+            <span class="color-grey">Create Blog</span>
+            </button>
+    <br>
+    
+             <!-- <button mat-button class="rec-menu mt-30" (click)="sidenav.toggle()"> -->
+                        <!-- <span class="color-grey">Login Details</span>
+                        </button>
+            <br>
+            <button mat-button class="rec-menu mt-30" (click)="sidenav.toggle()">
+            <span class="color-grey">Logout Details</span>
+            </button>
+            <br> --> 
+            <button mat-button class="rec-menu mt-30" (click)="generateITCourses()">
+                <span class="color-grey">Generate Course for IT</span>
+                </button>
+                <br>
+            <button mat-button class="rec-menu mt-30" (click)="generateMechCourses()">
+                <span class="color-grey">Generate Course for Mechanical</span>
+                </button>
+                <br>
+                <button mat-button class="rec-menu mt-30" (click)="generateITCategory()">
+                    <span class="color-grey">Generate Category for IT</span>
+                    </button>
+                    <br>
+              
+            <button mat-button class="rec-menu mt-30" (click)="generateMechCategory()">
+                <span class="color-grey">Generate Category for Mechanical</span>
+                </button>
+              
+               <br>
+               
+               <button mat-button class="rec-menu mt-30" (click)="generateMarketingDesignCategory()">
+                <span class="color-grey">Generate Category for Marketing Desgin & Graphics</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="generateMarketingDesignCourse()">
+                <span class="color-grey">Generate Course for Marketing Desgin & Graphics</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="generateMarketingDesignEnrollmentInterest()">
+                <span class="color-grey">Generate Enrollment Interest for Marketing Desgin & Graphics</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="generateInternshipCategory()">
+                <span class="color-grey">Generate Category for Internship</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="generateInternshipCourse()">
+                <span class="color-grey">Generate Course for Internship</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="generateInternshipEnrollmentInterest()">
+                <span class="color-grey">Generate Enrollment Interest for Internship</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="viewMarketingDesignCategory()">
+                <span class="color-grey">View Digital Marketing Category</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="viewMarketingDesignCourse()">
+                <span class="color-grey">View Digital Marketing Course</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="viewMarketingDesignEnrollmentInterest()">
+                <span class="color-grey">View Digital Marketing Enrollment Interest</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="viewInternshipCategory()">
+                <span class="color-grey">View Internship Category</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="viewInternshipCourse()">
+                <span class="color-grey">View Internship Course</span>
+                </button>
+               <br>
+               <button mat-button class="rec-menu mt-30" (click)="viewInternshipEnrollmentInterest()">
+                <span class="color-grey">View Internship Enrollment Interest</span>
+                </button>
+                <br>
+                <button mat-button class="rec-menu mt-30" (click)="viewBlog()">
+                <span class="color-grey">View Blog</span>
+                </button>
+                <br>
+                <button mat-button class="rec-menu mt-30" (click)="viewStudentAttendence()">
+                <span class="color-grey">View Student Attendence</span>
+                </button>
+                <br>
+                <button mat-button class="rec-menu mt-30" (click)="viewContact()">
+                       <span class="color-grey">View ContactUs</span>
+                       </button>
+                       <br>
+                       <button mat-button class="rec-menu mt-30" (click)="viewBatches()">
+                        <span class="color-grey">View Batches</span>
+                        </button>
+                        <br>
+                     
+                        <button mat-button class="rec-menu mt-30" (click)="viewMechCategory()">
+                            <span class="color-grey">View Mech Category</span>
+                            </button>
+                            <br>
+                            <button mat-button class="rec-menu mt-30" (click)="viewITCategory()">
+                                <span class="color-grey">View IT Category</span>
+                                </button>
+                                <br>
+                            <button mat-button class="rec-menu mt-30" (click)="viewHiring()">
+                                <span class="color-grey">View Hiring</span>
+                                </button>
+                                <br>
+                                <button mat-button class="rec-menu mt-30" (click)="viewFeedback()">
+                                    <span class="color-grey">View Feedback</span>
+                                    </button>
+                                    <br>
+                                    <button mat-button class="rec-menu mt-30" (click)="viewDesignation()">
+                                        <span class="color-grey">View Designation</span>
+                                        </button>
+                                        <br>
+                                        <button mat-button class="rec-menu mt-30" (click)="viewCertificate()">
+                                        <span class="color-grey">View Certificate</span>
+                                        </button>
+                                        <br>
+                                        <button mat-button class="rec-menu mt-30" (click)="viewStudent()">
+                                                        <span class="color-grey">View Student</span>
+                                                        </button>
+                                                        <br>
+                                                        <button mat-button class="rec-menu mt-30" (click)="viewService()">
+                                                            <span class="color-grey">View Service</span>
+                                                            </button>
+                                                            <br>
+                                                            <button mat-button class="rec-menu mt-30" (click)="viewCounsellor()">
+                                                                <span class="color-grey">View Counsellor</span>
+                                                                </button>
+                                                                <br>
+                                                                <button mat-button class="rec-menu mt-30" (click)="viewMechanicalCourses()">
+                                                                    <span class="color-grey">View Course For Mechanical</span>
+                                                                    </button>
+                                                                    <br>
+                                                                    <button mat-button class="rec-menu mt-30" (click)="viewITCourses()">
+                                                                        <span class="color-grey">View Course For IT</span>
+                                                                        </button>
+                                                                        <br>
+                                                                        <button mat-button class="rec-menu mt-30" (click)="viewITTrainers()">
+                                                                            <span class="color-grey">View IT Trainers</span>
+                                                                            </button>
+                                                                            <br>
+                                                                            <button mat-button class="rec-menu mt-30" (click)="viewMechTrainers()">
+                                                                                <span class="color-grey">View Mech Trainers</span>
+                                                                                </button>
+        </div>
+    </mat-sidenav>
+
+
+
+    <mat-sidenav-content>
+
+        <p><button mat-button (click)="sidenav.toggle()" color="primary">Toggle</button></p>
+
+
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,39 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')" (closed)="events.push('close!')">
+
+        <div class="header">
+            
+                <button mat-button class="rec-menu mt-30" (click)="createBlog()">
+                <span class="color-grey">Create Blog</span>
+                </button>
+                <br>
+                <button mat-button class="rec-menu mt-30" (click)="createStudentAttendence()">
+                <span class="color-grey">Create Student Attendence</span>
+                </button>
+                 <br>
+                 <button mat-button class="rec-menu mt-30" (click)="viewStudentAttendence()">
+                    <span class="color-grey">View Student Attendence</span>
+                    </button>
+                     <br>
+                <button mat-button class="rec-menu mt-30" (click)="viewBlog()"> 
+                <span class="color-grey">View Blog</span>
+                </button>
+                <br>
+                <button mat-button class="rec-menu mt-30" (click)="viewStudent()">
+                <span class="color-grey">View Student</span>
+                </button>
+                <br>
+                <button mat-button class="rec-menu mt-30" (click)="viewCertificate()">
+                <span class="color-grey">View Certificate</span>
+                </button>
+                <br>
+                <button mat-button class="rec-menu mt-30" (click)="viewCourse()">
+                <span class="color-grey">View Courses</span>
+                </button>                             
+                </div>
+                </mat-sidenav>
+                <mat-sidenav-content>
+
+        <p><button mat-button (click)="sidenav.toggle()" color="primary">Toggle</button></p>
+    </mat-sidenav-content>
+</mat-sidenav-container>

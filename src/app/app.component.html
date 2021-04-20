@@ -1,0 +1,220 @@
+<mat-toolbar color="white">
+    <mat-toolbar-row>
+     
+     <div>
+      <a routerLink="/home"><img src="../assets/logo addvic .svg" alt="image" class="logo"></a>
+    </div>
+
+   <div class="top-container">
+      <a href="https://www.instagram.com/addvic_technology/">
+       <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
+       </a>
+       <a href="https://www.facebook.com/addvictechnology">
+           <i class="fa fa-facebook-f fa-fw" style="font-size:24px"></i>
+           </a>
+           <a href="https://www.linkedin.com/company/addvic">
+           <i class="fa fa-linkedin fa-fw" style="font-size:24px"></i>
+         </a>
+         <a href="https://www.youtube.com/">
+          <i class="fa fa-youtube fa-fw" style="font-size:24px"></i>
+        </a>
+        <a href="https://wa.me/message/MN4AEW3ISURRK1">
+          <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
+        </a>
+   </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  
+       <mat-toolbar class="navbar-color">
+        <mat-toolbar-row>
+          <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm class="menu-buttom">
+            <mat-icon>menu</mat-icon>
+          </button>
+          
+          <span class="menu-spacer"></span>
+          <div fxShow="true" fxHide.lt-md>
+            
+            <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+            <a mat-button routerLink="/about" routerLinkActive="active">About Us</a>
+            <a mat-button [matMenuTriggerFor]="Menu" routerLinkActive="active">Services
+              <mat-icon>keyboard_arrow_down</mat-icon>
+          </a>
+        
+          <mat-menu #Menu="matMenu" yPosition="below" class="dropdown-btn">
+              <button mat-menu-item routerLink="/it/service" routerLinkActive="active">IT Services</button>
+              <button mat-menu-item routerLink="/mechanical/service" routerLinkActive="active">Mechanical Design</button>
+              <button mat-menu-item routerLink="/graphics/service" routerLinkActive="active">Graphics Design</button>
+              <button mat-menu-item routerLink="/digital/service" routerLinkActive="active">Digital Marketing</button>
+          </mat-menu>
+          <a mat-button routerLink="/courses" routerLinkActive="active">Courses</a>
+            <a mat-button routerLink="/certificate/verification" routerLinkActive="active">Certificate Verification</a>
+            <a mat-button routerLink="/blogs" routerLinkActive="active">Blogs</a>
+            <a mat-button routerLink="/contact/us" routerLinkActive="active">Contact-Us</a>
+            <!-- <a mat-button [matMenuTriggerFor]="loginMenu" *ngIf="!storeData.email">Login 
+                <mat-icon>keyboard_arrow_down</mat-icon>
+            </a>
+          
+            <mat-menu #loginMenu="matMenu" yPosition="below"> 
+                <button mat-menu-item routerLink="/student/login">Student Login</button>
+                <button mat-menu-item routerLink="/staff/login">Center Login</button>
+            </mat-menu>
+           -->
+           <a mat-button routerLink="/student/login" routerLinkActive="active">Login</a>
+         
+           <a mat-raised-button routerLinkActive="active" class="pay" href="https://rzp.io/l/addvicpayment">Proceed to Pay</a>
+            <a mat-button routerLink="/home" (click)="logout()" *ngIf="storeData.email">Logout</a>
+          </div> 
+        </mat-toolbar-row>
+      </mat-toolbar>
+  
+         <div>
+         <!-- <div style="height:60px;">  -->
+     <mat-sidenav-container class="mat-drawer-container" fxFlexFill>
+        <mat-sidenav #sidenav>
+          <mat-nav-list>
+             <!-- <a (click)="sidenav.toggle()" mat-list-item><mat-icon class="side">
+              clear
+            </mat-icon></a>  -->
+
+            <a mat-list-item routerLink="/home" routerLinkActive="active-list-item" (click)="sidenav.toggle()">
+            <!-- <a mat-button routerLink="/home" routerLinkActive="active" (click)="sidenav.toggle()"> -->
+              <h2 matLine>Home</h2>
+              <mat-icon matListIcon>home</mat-icon>
+            </a>
+            
+           
+      <a mat-list-item routerLink="/about" routerLinkActive="active-list-item" (click)="sidenav.toggle()">
+        <h2 matLine>About Us</h2>
+        <mat-icon matListIcon>
+          person_search</mat-icon>
+         
+        <!-- <mat-icon matListIcon></mat-icon> -->
+        </a>
+      
+      <a mat-list-item [matMenuTriggerFor]="Menu" routerLinkActive="active-list-item">
+        <h2 matLine>Services</h2>
+        <mat-icon matListIcon>
+          construction
+         </mat-icon> 
+        <mat-icon>keyboard_arrow_down</mat-icon>
+       </a>
+  
+    <mat-menu #Menu="matMenu" yPosition="below">
+        <button mat-menu-item (click)="sidenav.toggle()" routerLink="/it/service" routerLinkActive="active-list-item">IT</button>
+        <button mat-menu-item (click)="sidenav.toggle()" routerLink="/mechanical/service" routerLinkActive="active-list-item">Mechanical Design</button>
+        <button mat-menu-item (click)="sidenav.toggle()" routerLink="/graphics/service" routerLinkActive="active-list-item">Graphics</button>
+        <button mat-menu-item (click)="sidenav.toggle()" routerLink="/digital/service" routerLinkActive="active-list-item">Digital Marketing</button>
+    </mat-menu>
+    
+    <a mat-list-item routerLink="/courses" routerLinkActive="active-list-item" (click)="sidenav.toggle()">
+      <h2 matLine>Courses</h2>
+      <mat-icon matListIcon>
+       </mat-icon>
+    </a>
+      <a mat-list-item routerLink="/certificate/verification" routerLinkActive="active-list-item" (click)="sidenav.toggle()">
+        <h2 matLine>Certificate Verification</h2>
+        <mat-icon matListIcon>
+         </mat-icon>
+      </a>
+     
+      <a mat-list-item routerLink="/blogs" routerLinkActive="active-list-item" (click)="sidenav.toggle()">
+        <h2 matLine>Blogs</h2>
+        <mat-icon matListIcon>
+         </mat-icon></a>
+      <a mat-list-item routerLink="/contact/us" routerLinkActive="active-list-item" (click)="sidenav.toggle()">
+        <h2 matLine>Contact-Us</h2>
+        <mat-icon matListIcon>
+         </mat-icon></a>
+
+
+      <!-- <a mat-button [matMenuTriggerFor]="loginMenu" *ngIf="!storeData.email">Login 
+          <mat-icon>keyboard_arrow_down</mat-icon>
+      </a><br>
+      <mat-menu #loginMenu="matMenu" yPosition="below">
+          <button mat-menu-item routerLink="/student/login">Student Login</button>
+          <button mat-menu-item routerLink="/staff/login">Center Login</button>
+      </mat-menu> -->
+      <a mat-list-item routerLink="/student/login" routerLinkActive="active-list-item" (click)="sidenav.toggle()">
+        <h2 matLine>Login</h2>
+        <mat-icon matListIcon>
+         </mat-icon></a>
+
+      <a mat-raised-button  class="pay" href="https://rzp.io/l/addvicpayment" (click)="sidenav.toggle()">Proceed to Pay</a>
+      <a mat-button routerLink="/home" (click)="logout()" *ngIf="storeData.email">Logout</a>
+  
+     </mat-nav-list>
+    </mat-sidenav>
+     <mat-sidenav-content>
+      <router-outlet></router-outlet>
+     </mat-sidenav-content>
+    </mat-sidenav-container>
+    </div> 
+    <a routerLink="/student/changePassword" routerLinkActive="active"></a>
+<a routerLink="/student/changePassword" routerLinkActive="active"></a>
+<a routerLink="/otpVerify" routerLinkActive="active"></a>
+<a routerLink="/forgotPassword" routerLinkActive="active"></a>
+ <a routerLink="/getexam" routerLinkActive="active"></a>
+ <a routerLink="/create/exam" routerLinkActive="active"></a>
+ <a routerLink="/viewStudentAttendence" routerLinkActive="active"></a>
+ <a routerLink="/viewBlog" routerLinkActive="active"></a>
+ <a routerLink="/createblog" routerLinkActive="active"></a>
+ <a routerLink="/blogs" routerLinkActive="active"></a>
+ <a routerLink="/getpost" routerLinkActive="active"></a>
+ <a routerLink="/course/create" routerLinkActive="active"></a>
+ <a routerLink="/batch/create" routerLinkActive="active"></a>
+ <a routerLink="/category/create" routerLinkActive="active"></a>
+ <a routerLink="/sidenv" routerLinkActive="active"></a>
+ <a routerLink="/facultygenerate" routerLinkActive="active"></a>
+ <a routerLink="/staff/signup" routerLinkActive="active"></a>
+ <a routerLink="/student/signupnew" routerLinkActive="active"></a>
+ <a routerLink="/contact" routerLinkActive="active"></a>
+ <a routerLink="/create/feedback" routerLinkActive="active"></a>
+ <a routerLink="/viewenqiury" routerLinkActive="active"></a>
+ <a routerLink="/students" routerLinkActive="active"></a>
+ <a routerLink="/studentdetails" routerLinkActive="active"></a>
+ <a routerLink="/it/courses" routerLinkActive="active"></a>
+ <a routerLink="/mechanical/courses" routerLinkActive="active"></a>
+ <a routerLink="/batches" routerLinkActive="active"></a>
+ <a routerLink="/feedbacks" routerLinkActive="active"></a>
+ <a routerLink="/courses" routerLinkActive="active"></a>
+ <a routerLink="/entire/courses" routerLinkActive="active"></a>
+ <a routerLink="/categories" routerLinkActive="active"></a>
+ <a routerLink="/create/certificate" routerLinkActive="active"></a>
+ <a routerLink="/certificates" routerLinkActive="active"></a>
+ <a routerLink="/feedback" routerLinkActive="active"></a>
+ <a routerLink="/privacy" routerLinkActive="active"></a>
+ <a routerLink="/termsAndCondition" routerLinkActive="active"></a>
+ <a routerLink="/hiring" routerLinkActive="active"></a>
+ <a routerLink="/create/designation" routerLinkActive="active"></a>
+ <a routerLink="/ourCourses" routerLinkActive="active"></a>
+ <a routerLink="/itcategory/create" routerLinkActive="active"></a>
+ <a routerLink="/itcategories" routerLinkActive="active"></a>
+ <a routerLink="/itcourses/create" routerLinkActive="active"></a>
+ <a routerLink="/forms" routerLinkActive="active"></a>
+ <a routerLink="/mechanical/allcourses" routerLinkActive="active"></a>
+ <a routerLink="/itallcourses" routerLinkActive="active"></a>
+ <a routerLink="/services"routerLinkActive="active"></a>
+ <a routerLink="/studentPortal" routerLinkActive="active"></a>
+ <a routerLink="/counsellorPortal" routerLinkActive="active"></a>
+ <a routerLink="/staffPortal" routerLinkActive="active"></a>
+ <a routerLink="/users" routerLinkActive="active"></a>
+ <a routerLink="/counsellors" routerLinkActive="active"></a>
+ <a routerLink="/permit/counsellor/signup" routerLinkActive="active"></a>
+ <a routerLink="/get/ittrainers" routerLinkActive="active"></a>
+ <a routerLink="/checkBirthday" routerLinkActive="active"></a>
+ <a routerLink="/student/attendance" routerLinkActive="active"></a>
+ <a routerLink="/gridFlex" routerLinkActive="active"></a>
+ <a routerLink="/graphic/create" routerLinkActive="active"></a>
+ <a routerLink="/graphic/make" routerLinkActive="active"></a>
+ <a routerLink="/graphic/service" routerLinkActive="active"></a>
+ <a routerLink="/intern/service" routerLinkActive="active"></a>
+ <a routerLink="/internship/course/create" routerLinkActive="active"></a>
+ <a routerLink="/internship/category/create" routerLinkActive="active"></a>
+ <a routerLink="/graphic/categories" routerLinkActive="active"></a>
+ <a routerLink="/graphic/allcourses" routerLinkActive="active"></a>
+ <a routerLink="/graphic/services" routerLinkActive="active"></a>
+ <a routerLink="/intern/get/trainers" routerLinkActive="active"></a>
+ <a routerLink="/internship/allcourses" routerLinkActive="active"></a>
+ <a routerLink="/internship/categories" routerLinkActive="active"></a>
+ 
+<router-outlet></router-outlet>

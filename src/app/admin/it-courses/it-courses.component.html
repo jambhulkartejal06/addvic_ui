@@ -1,0 +1,67 @@
+<mat-card class="example-card">
+    <mat-card-header class="text">
+        <mat-card-title>Course Form</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <form class="example-form" [formGroup]="courseForm">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <input #fileInput type="file" (change)="onFileInput($event)" accept="image/*" placeholder="choose a file" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input #fileInput type="file" (change)="onFileInput($event)" accept="pdf/*" placeholder="choose a file" />
+                    </td>
+                </tr> 
+                 <tr>
+                    <td>
+                        <mat-form-field appearance="outline">
+                            <mat-label>Category List</mat-label>
+                            <mat-select>
+                                <mat-option *ngFor="let cat of category" (click)="onCategorySelect(cat)" [value]="cat.category">
+                                    {{cat.category}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="example-full-width">
+                           
+                            <input matInput placeholder="Add course name" [(ngModel)]="courseObj.courseName" name="courseName" formControlName="courseName" required>
+
+                        </mat-form-field>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="example-full-width">
+                            <input matInput placeholder="Add basic plan" [(ngModel)]="courseObj.basicPlan" name="basicPlan"  formControlName="basicPlan" required>
+                        </mat-form-field>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="example-full-width">
+                            <input matInput placeholder="Add premium plan" [(ngModel)]="courseObj.premiumPlan" name="premiumPlan"  formControlName="premiumPlan" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+            <mat-card-actions>
+                <button mat-flat-button (click)="addCourseDetails()" (click)="clearForm()" color="primary"  type="submit">Add</button>
+            </mat-card-actions>
+        
+        </form>
+
+
+    </mat-card-content>
+  
+</mat-card>
+

@@ -1,0 +1,79 @@
+<mat-form-field>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+       
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element; let i = index;"> {{i+1}} </td>
+      </ng-container>
+              
+         <ng-container matColumnDef="fullName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Fullname </th>
+          <td mat-cell *matCellDef="let element"> {{element.fullName}} 
+            <a fxFlexFill routerLinkActive=[active] class="mat-row-link"></a>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Email</th>
+            <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+          </ng-container>
+          
+          <ng-container matColumnDef="mobile">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Mobile</th>
+            <td mat-cell *matCellDef="let element"> {{element.mobile}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="enrollmentInterest">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Enrollment Interest</th>
+            <td mat-cell *matCellDef="let element"> {{element.enrollmentInterest}} </td>
+          </ng-container>
+          
+          <ng-container matColumnDef="created">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Time</th>
+            <td mat-cell *matCellDef="let element"> {{element.created}} </td>
+          </ng-container>
+          <ng-container matColumnDef="comment">
+            
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Comments</th>
+            <td mat-cell *matCellDef="let element"> <textarea cols="30" type="text" (change)="onChange($event.target.value)" (ngModelChange)="onSelection(element)"></textarea></td>
+          </ng-container>
+
+          <ng-container matColumnDef="status">
+            
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Status</th>
+            <td mat-cell *matCellDef="let element">
+            
+              <mat-form-field appearance="fill" class="drop-down-class">
+                <mat-label class="drop-down-class">Choose an color</mat-label>
+                <mat-select [(ngModel)]="element.colour" (ngModelChange)="onSelection(element)" [ngStyle]="{'background-color':element.colour}">
+                  <mat-option value="white">White</mat-option>
+                  <mat-option value="green">Green</mat-option>
+                  <mat-option value="red">Red</mat-option>
+                  <mat-option value="yellow">Yellow</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </td>
+          </ng-container>
+
+          <ng-container matColumnDef="action">&nbsp;
+            <th mat-header-cell *matHeaderCellDef> Action </th>
+            <td mat-cell *matCellDef="let element; let i=index">
+              <mat-icon color="warn" aria-hidden="false" (click)="onDelete(element,i)">
+                delete</mat-icon>
+              </td>
+              </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"
+          [ngStyle]="{'background-color': row.colour}" (click)="saveRow(row)">
+        <!-- let entry" [ngClass]="{'make-gold': true }"
+        (click)="onSelection(columns)"> -->
+        </tr>
+      </table>
+       <mat-paginator [pageSizeOptions]="[25]"></mat-paginator> 
+    </div>
+
+

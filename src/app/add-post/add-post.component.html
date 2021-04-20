@@ -1,0 +1,35 @@
+<div class="add-post-content">
+    <div class="container">
+      <div>
+        <h3 class="new-post-title">Create New Post</h3>
+      </div>
+     <mat-divider></mat-divider>
+      <form [formGroup]="addPostForm">
+        
+        <div class="form-group">
+            <mat-label>Title</mat-label>
+            <mat-form-field appearance="outline">
+          <input matInput type="text" [formControlName]="'title'" class="form-control" placeholder="Title">
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+            <mat-label>Body</mat-label>
+          <editor [formControlName]="'content'" [init]="{plugins: 'link'}"></editor>
+        </div>
+
+        <div class="form-group">
+          <mat-label>Author</mat-label>
+          <mat-form-field appearance="outline">
+        <input matInput type="text" [formControlName]="'username'" class="form-control" placeholder="Author">
+        </mat-form-field>
+      </div>
+          <mat-card-actions>
+              
+                <button mat-flat-button color="primary" *ngIf="!isEditMode" (click)="addPostBlog()" type="button">Post</button> 
+                <button mat-flat-button (click)="updatePost()" *ngIf="isEditMode" color="primary" type="button">Update</button>
+            </mat-card-actions>
+      </form >
+    </div>
+  </div>
+
+

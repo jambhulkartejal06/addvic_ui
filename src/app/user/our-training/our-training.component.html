@@ -1,0 +1,176 @@
+<div class="container">
+    <div class="sliders">
+        <mat-carousel
+        timings="250ms ease-in"
+        [autoplay]="true"
+        interval="3000"
+        color="accent"
+        maxWidth="auto"
+        proportion="25"
+        slides="5"
+        [loop]="true"
+        [hideArrows]="false"
+        [hideIndicators]="false"
+        [useKeyboard]="true"
+        [useMouseWheel]="false"
+        orientation="ltr"
+      >
+        <mat-carousel-slide
+          #matCarouselSlide
+          *ngFor="let slide of slides; let i = index"
+          [image]="slide.image"
+          overlayColor="#00000040"
+          [hideOverlay]="false"
+        ></mat-carousel-slide>
+      </mat-carousel>
+       
+        <!-- <ng-container *ngFor="let img of img_list; let i = index">
+           
+            <div class="slider" *ngIf="current == i" @fade>
+                <img class="img" [src]="img">
+            </div>
+        </ng-container> -->
+    </div>
+</div> 
+
+
+        <!-- <img src="../assets/mechanical.svg" alt="image">
+      
+        <img src="../assets/ITandCSE.svg" alt="image">
+      -->
+
+<div class="row categories">
+    <h3>CHOOSE YOUR DEPARTMENT CATEGORIES</h3>
+</div>
+<!-- <div fxLayout="row wrap">
+<mat-toolbar color="primary" style="height: 80px;">
+    <mat-toolbar-row>
+       
+        <span>Mechanical Courses</span>
+        <a [routerLink]="['/mechanical/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" width="60px" height="60px" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10"></a>
+        <span>IT Courses</span>
+        <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" width="60px" height="60px" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10"></a>
+        <span>Mechanical Courses</span>
+        <a [routerLink]="['/mechanical/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" width="60px" height="60px" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10"></a>
+        <span>IT Courses</span>
+        <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" width="60px" height="60px" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10"></a>
+        
+    </mat-toolbar-row>
+    </mat-toolbar>
+    </div> -->
+
+
+    <section>
+        <div>
+            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+                <div>
+                    <a [routerLink]="['/mechanical/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" alt="" width="80px" height="80px"></a>
+                    <div>Mechanical Courses</div>
+                    </div>
+                    <div>
+                    <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" alt="" width="80px" height="80px"></a>
+                    <div>IT Courses</div>
+                    </div>
+                    <div>
+                    <a [routerLink]="['/graphic/service']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" alt="" width="80px" height="80px"></a>
+                    <div>Digital Marketing & Design</div>
+                    </div>
+                    <div>
+                    <a [routerLink]="['/intern/service']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" alt="" width="80px" height="80px"></a>
+                    <div>Internship</div>
+                    </div>
+                    </div>
+                    </div>
+        </section>
+
+
+  
+      <!-- <div class="row">
+        <div class="container1">
+            <div class="box1">
+                <a [routerLink]="['/mechanical/courses']" routerLinkActive="router-link-active"><img src="./../../../assets/mechanicalicon.svg" alt=""></a>
+            </div>
+            <div class="box2">
+                <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active"><img src="./../../../assets/ITorCSEicon.svg" alt=""></a>
+                
+            </div>
+        </div>
+      </div> -->
+
+<div class="clear"></div>
+
+      <div class="row-2">
+        <div class="container">
+            <mat-grid-list rowHeight="1:0.6"
+            [responsive]="responsive"
+            (responsiveColsChange)="cols = $event">
+            <mat-grid-tile>
+                
+                <ul>
+                    <li><b>Important Links :</b></li>
+                    <li><a routerLink="/home">Home</a></li>
+                    <li><a routerLink="/about">About Us</a></li>
+                    <li><a routerLink="/certificate/certificateNumber">Certificate Verification</a></li>
+                    <li><a routerLink="/create/feedback">Contact Us</a></li>
+                    <li><a routerLink="/feedback">Feedback Form</a></li>
+                    <li><a routerLink="/student/login">Login</a></li>
+                </ul>
+            </mat-grid-tile>
+           
+            <mat-grid-tile>
+                <ul>
+                    <li><b>Our Other Accounts Here :</b></li>
+                    <li><a href="https://www.instagram.com/addvic_technology/">
+                        <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
+                        Instagram</a></li>
+                    <li><a href="https://www.facebook.com/addvictechnology">
+                        <i class="fa fa-facebook-f fa-fw" style="font-size:24px"></i>
+                        Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/addvic">
+                        <i class="fa fa-linkedin fa-fw" style="font-size:24px"></i>
+                        Linkedin</a></li>
+                    <li><a href="https://www.youtube.com/">
+                        <i class="fa fa-youtube fa-fw" style="font-size:24px"></i>
+                        Youtube</a></li>
+                    <li><a href="https://wa.me/message/MN4AEW3ISURRK1">
+                        <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
+                        Whatsapp</a></li>
+                </ul>
+            </mat-grid-tile>
+        
+            <mat-grid-tile>
+                <ul>
+                    <li><b>Our Privacy Policy is Here :</b></li>
+                    <li><a routerLink="/privacy">Privacy Policy</a></li><br>
+                    <li><b>About Our Terms & Conditions :</b></li>
+                    <li><a routerLink="/termsAndCondition">Terms & Conditions</a></li><br>
+                    <li><a routerLink="/hiring" style="color: #e2b84f;">We are Hiring !</a></li>
+                    </ul>
+            </mat-grid-tile>
+            <mat-grid-tile>
+           
+                <ul>
+                    <li><b>Phone :</b></li>
+                    <li><a href="tel:18002671818">18002671818</a></li>
+                    <li><b>Email :</b></li>
+                    <li><a href="mailto:info@addvic.com">info@addvic.com</a></li>
+                    <li><b>Address :</b></li>
+                    <li>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
+                        Anand Nagar, <br> Pune - 411051</li>
+                    </ul>
+        
+               </mat-grid-tile>
+        
+            </mat-grid-list>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="row-3">
+            CIN No.: U72900PN2020OPC194352
+            </div>
+            <div class="row-3">
+                GST No.: 27AAUCA0988N1ZQ
+                </div>
+        <div class="row-3">
+        All Rights Reserved @ <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
+        </div>

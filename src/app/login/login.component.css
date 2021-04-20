@@ -1,0 +1,48 @@
+.example-card {
+    max-width: 480px;
+    margin-left: 401px;
+    margin-top: 80px;
+    max-height: 300px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.text{
+    text-align:center '!important';
+    margin: 0 auto '!important';
+    display:inline;
+    font-family: Poppins;
+    color:#263238
+}
+mat-card-title {
+    display: flex;
+    justify-content: left;
+    font-family: Poppins;
+    color:#263238
+}
+.example-full-width{
+    font-family: Poppins;
+    color:#263238
+}
+
+mat-card-actions {
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 4px 12px;
+}
+
+mat-card {
+    margin-bottom: 10px;
+  }
+  
+  .mr-10 {
+    margin-right: 10px;
+  }
+  
+  .ml-10 {
+    margin-left: 10px;
+  }

@@ -1,0 +1,66 @@
+<mat-card-content>
+    <form class="example-form" #examForm="ngForm">  
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Courses</mat-label>
+                        <mat-select>
+                        <mat-option *ngFor="let course of courses" (click)="onCourseSelect(course)" [value]="course.course_id">
+                          {{course.course_name}}
+                        </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </td>
+             </tr> 
+             <tr>
+                <td>
+                    <mat-form-field appearance="outline">
+                    <mat-label>Batches</mat-label>
+                        <mat-select>
+                              <mat-option *ngFor="let batch of batches" (click)="onBatchSelect(batch)" [value]="batch.batch_id">
+                                {{batch.batch}}
+                            </mat-option>
+                        </mat-select>
+                        </mat-form-field>
+                       </td>
+                      </tr>
+            <tr>
+                <td>
+
+                    <mat-form-field appearance="outline" class="example-full-width">
+                        <mat-label>Exam Duration(in Minute)</mat-label>
+                        <input matInput [(ngModel)]="examObj.duration" name="duration" required>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <mat-form-field appearance="outline" class="example-full-width">
+                        <mat-label>Exam Name</mat-label>
+                        <input matInput [(ngModel)]="examObj.exam_name" name="exam_name" required>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+
+                    <mat-form-field appearance="outline" class="example-full-width">
+                        <mat-label>Passing Marks</mat-label>
+                        <input matInput [(ngModel)]="examObj.passing_marks" name="passing_marks" required>
+                    </mat-form-field>
+                </td>
+            </tr>
+
+        </table>
+        <mat-card-actions>
+            <button mat-flat-button (click)="createExam(examForm)" *ngIf="!isEditMode" color="primary">Add Exam</button>
+            <!-- <button mat-flat-button (click)="submit()" *ngIf="!isEditMode" color="primary" type="button">Add</button>  -->
+            <button mat-flat-button (click)="updateExam()" *ngIf="isEditMode" color="primary" type="button">Update</button>
+        </mat-card-actions>
+    </form>
+
+</mat-card-content>
+
+

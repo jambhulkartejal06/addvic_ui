@@ -1,0 +1,144 @@
+<div class="main">
+    <mat-card class="paragraph">
+        <p>
+            We believe in researching the future at Addvic pvt ltd and working to update ourselves to match the ever-changing business environment and customer needs. Taking a step in the same direction, we provide both information technology and mechanical services with instruction. These training courses are structured to take into account recent advances and breakthroughs in each and every area. This will encourage eminent experts in their respective fields to learn new concepts and ideas based on study. Our customers are willing to take these training courses and be aware of our fast-moving world. After completion of the course, you are eligible to get a genuine certificate which is recognised globally. If anyone have any doubt or query about the genuineness certificate, we would like to ensure that the certificates are original and well appreciated. Going further if you want to verify it, you can visit official website of Addvic and put up your unique certificate number to check and verify your certificate. So, don’t wait much, go ahead and visit our official website and enrol for any training course and get a well-deserved certificate on completion of the training course. Have a happy learning! 
+            </p>
+    </mat-card>
+    </div>
+    <div class="clear"></div>
+    <div class="header">
+    <div class="search-bar">
+    <mat-form-field appearance="outline">
+        <mat-label>Enter Your Certificate Number</mat-label>
+        <input matInput class="form-control" type="text" name="search" [(ngModel)]="username" autocomplete="off" placeholder="Search..." required/>
+    
+    </mat-form-field>
+    </div>
+    
+        <button mat-flat-button (click)="searchById(username)" color="primary">
+        <span class="material-icons">search
+        </span>
+    </button>
+    </div>
+    <div class="clear"></div>
+    
+    <div class="certificate">
+        <div *ngIf="openform">
+            <mat-card>
+               
+                <mat-card-header  class="example-card">
+                    <mat-card-title>
+                        Certificate
+                    </mat-card-title>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <!-- <div *ngFor="let item of user">
+                    <table class="middle-content">
+                        <tr>
+                            <th>Certification Number:</th>
+                            <td>{{item.certificate_number}}</td>
+                            </tr>
+                            <tr>
+                            <th>FullName:</th>
+                            <td>{{item.fullName}}</td>
+                            </tr>
+                            <tr>
+                            <th>StartDate:</th>
+                            <td>{{item.startDate}}</td>
+                            </tr>
+                            <tr>
+                            <th>EndDate:</th>
+                            <td>{{item.endDate}}</td>
+                            </tr>
+                            <tr>
+                            <th>Course:</th>
+                            <td>{{item.course}</td>
+                            </tr>
+                        </table>
+                    </div> -->
+    
+                    <div *ngFor="let item of user | keyvalue: originalOrder">
+                        {{item.key}} : {{item.value}}
+                       </div> 
+            </mat-card>
+             </div>
+        </div>
+    <div class="clear"></div>
+
+
+    <div class="row-2">
+        <div class="container">
+            <mat-grid-list rowHeight="1:0.6"
+            [responsive]="responsive"
+            (responsiveColsChange)="cols = $event">
+            <mat-grid-tile>
+                
+                <ul>
+                    <li><b>Important Links :</b></li>
+                    <li><a routerLink="/home">Home</a></li>
+                    <li><a routerLink="/about">About Us</a></li>
+                    <li><a routerLink="/certificate/certificateNumber">Certificate Verification</a></li>
+                    <li><a routerLink="/create/feedback">Contact Us</a></li>
+                    <li><a routerLink="/feedback">Feedback Form</a></li>
+                    <li><a routerLink="/student/login">Login</a></li>
+                </ul>
+            </mat-grid-tile>
+           
+            <mat-grid-tile>
+                <ul>
+                    <li><b>Our Other Accounts Here :</b></li>
+                    <li><a href="https://www.instagram.com/addvic_technology/">
+                        <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
+                        Instagram</a></li>
+                    <li><a href="https://www.facebook.com/addvictechnology">
+                        <i class="fa fa-facebook-f fa-fw" style="font-size:24px"></i>
+                        Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/addvic">
+                        <i class="fa fa-linkedin fa-fw" style="font-size:24px"></i>
+                        Linkedin</a></li>
+                    <li><a href="https://www.youtube.com/">
+                        <i class="fa fa-youtube fa-fw" style="font-size:24px"></i>
+                        Youtube</a></li>
+                    <li><a href="https://wa.me/message/MN4AEW3ISURRK1">
+                        <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
+                        Whatsapp</a></li>
+                </ul>
+            </mat-grid-tile>
+        
+            <mat-grid-tile>
+                <ul>
+                    <li><b>Our Privacy Policy is Here :</b></li>
+                    <li><a routerLink="/privacy">Privacy Policy</a></li><br>
+                    <li><b>About Our Terms & Conditions :</b></li>
+                    <li><a routerLink="/termsAndCondition">Terms & Conditions</a></li><br>
+                    <li><a routerLink="/hiring" style="color: #e2b84f;">We are Hiring !</a></li>
+                    </ul>
+            </mat-grid-tile>
+            <mat-grid-tile>
+           
+                <ul>
+                    <li><b>Phone :</b></li>
+                    <li><a href="tel:18002671818">18002671818</a></li>
+                    <li><b>Email :</b></li>
+                    <li><a href="mailto:info@addvic.com">info@addvic.com</a></li>
+                    <li><b>Address :</b></li>
+                    <li>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
+                        Anand Nagar, <br> Pune - 411051</li>
+                    </ul>
+        
+               </mat-grid-tile>
+        
+            </mat-grid-list>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="row-3">
+            CIN No.: U72900PN2020OPC194352
+            </div>
+            <div class="row-3">
+                GST No.: 27AAUCA0988N1ZQ
+                </div>
+        <div class="row-3">
+        All Rights Reserved @ <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
+        </div>
+        

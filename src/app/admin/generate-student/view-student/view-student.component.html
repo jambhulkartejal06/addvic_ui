@@ -1,0 +1,92 @@
+<mat-form-field>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+  </mat-form-field>
+  <div class="mat-elevation-z8">
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+     <ng-container matColumnDef="firstName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> FirstName </th>
+      <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+    </ng-container>
+
+     <ng-container matColumnDef="middleName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> MiddleName </th>
+      <td mat-cell *matCellDef="let element"> {{element.middleName}} </td>
+    </ng-container> 
+
+    <ng-container matColumnDef="lastName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> LastName </th>
+      <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+    </ng-container>
+    <ng-container matColumnDef="gender">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Gender </th>
+      <td mat-cell *matCellDef="let element"> {{element.gender}} </td>
+    </ng-container>
+   
+    <!-- <ng-container matColumnDef="mobileNumber">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Mobile No. </th>
+      <td mat-cell *matCellDef="let element"> {{element.mobileNumber}} </td>
+    </ng-container>
+   
+    <ng-container matColumnDef="parentNumber">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Parent No.  </th>
+      <td mat-cell *matCellDef="let element"> {{element.parentNumber}} </td>
+    </ng-container> -->
+    
+    
+    <ng-container matColumnDef="dateOfBirth">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Date Of Birth </th>
+      <td mat-cell *matCellDef="let element"> {{element.dateOfBirth}} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Email </th>
+      <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="mobileNumber">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Mobile Number </th>
+      <td mat-cell *matCellDef="let element"> {{element.mobileNumber}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="courseName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Course Name</th>
+      <td mat-cell *matCellDef="let element"> {{element.courseName}} </td>
+    </ng-container>
+    
+    <ng-container matColumnDef="batch">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Batch Name</th>
+      <td mat-cell *matCellDef="let element"> {{element.batch}} </td>
+    </ng-container>
+    
+    
+     <ng-container matColumnDef="action">&nbsp;
+      <th mat-header-cell *matHeaderCellDef> Action </th>
+      <td mat-cell *matCellDef="let element; let i = index">
+
+          <mat-icon class="example-icon" color="accent" aria-hidden="false"
+          (click)="openDialog(element)"  aria-label="Example delete icon">list
+          </mat-icon>&nbsp;
+         
+          <a routerLink='/student/signupnew/{{element.user_id}}'>
+            <mat-icon aria-hidden="false">edit</mat-icon></a>
+        </td>
+          </ng-container> 
+
+   
+       
+
+
+      <!-- <ng-container matColumnDef="image">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Image </th>
+        <td mat-cell *matCellDef="let element"> {{element.image}} </td>
+      </ng-container> -->
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <mat-paginator [pageSizeOptions]="[25]"></mat-paginator>
+</div>
+  
+  
+
