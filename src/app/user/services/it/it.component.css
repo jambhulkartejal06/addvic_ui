@@ -1,0 +1,181 @@
+.content ul li{
+    list-style-type: none;
+    float: left;
+    width: 45%;
+    
+}
+.content ul li p{
+padding: 80px 10px 0px 10px !important;
+font-family: Poppins;
+color:#263238;
+}
+
+
+p ,mat-panel-title{
+font-family: Poppins;
+color:#263238;
+}
+
+.content ul li img{
+    width: 100%;
+}
+.content ul{
+    margin-block-start: 0em !important;
+    padding: 0px 0px 0px 0px !important;
+}
+@media only screen and (max-width: 900px) {
+    
+        .content ul li{
+            float: none;
+            width: 100%;
+        }
+        .content ul li img{
+             width: 75%;
+             margin: 0 auto;
+             justify-content: center;
+        }
+}
+
+@media only screen and (max-width: 700px){
+    .content ul li img
+  {
+      width: 100%;
+  }
+}
+
+
+
+
+
+.clear {
+    clear:both;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 580px){
+    .row-2 {
+     text-align: center; 
+    }
+ }
+ 
+ .center {
+    margin: 0 auto;
+    color: #129fb8;
+    font-family: Poppins;
+    }
+    .bold {
+    font-size: 350%;
+    text-align: left !important;
+    font-family: Poppins;
+    }
+    .box1{
+    width: 50%;
+    }
+    .clear{
+    clear: both;
+    }
+    
+    .row-2 {
+    width: 100%;
+    background-color: #263238;
+    padding: 25px 0px;
+    }
+    
+    .row-2 ul li {
+    color: #e0e0e0;
+    list-style-type: none;
+    line-height: 22px;
+    }
+    .row-2 ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    }
+    .row-2 ul li b {
+    color: #129fb8;
+    }
+    
+    .row-2 ul li a:hover {
+    color: #be4e64;
+    }
+    
+    .row-3 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: #263238;
+    color: #666565;
+    }
+    .row-3 a {
+    text-decoration: none;
+    color: #666565;
+    }
+
+
+
+    example-card {
+        /* max-width: 300px; */
+        margin-left: 400px;
+        margin-top: 75px;
+        /* max-height: 300px; */
+    } 
+    
+    .example-form {
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+       
+    }
+    
+    mat-card-title {
+        display: flex;
+        justify-content: center;
+        font-family: Poppins;
+        color:#263238
+    }
+    
+    .text{
+        text-align:center '!important';
+        margin: 0 auto '!important';
+        display:inline;
+        font-family: Poppins;
+        color:#263238
+    }
+    .example-full-width{
+        font-family: Poppins;
+        color:#263238
+    }
+    mat-card-actions{
+        padding: 0px 0;
+        margin-left: 0px;
+    }
+    .material-icons {
+        list-style: none;
+        float: right;
+        padding-right: 20px;
+        vertical-align: top;
+        margin-top: 0px;
+    }
+    /* .example-headers-align .mat-expansion-panel-header-title,
+    .example-headers-align .mat-expansion-panel-header-description {
+      flex-basis: 0;
+    }
+    
+    .example-headers-align .mat-expansion-panel-header-description {
+      justify-content: space-between;
+      align-items: center;
+    } */
+    .space{
+        padding:20px;
+    }
+    tr{
+    border: 1px solid #dddddd;
+      text-align: left;
+      padding: 20px;
+    }
+    
+    .mat-expansion-panel{
+      
+        margin: 4px;
+    }

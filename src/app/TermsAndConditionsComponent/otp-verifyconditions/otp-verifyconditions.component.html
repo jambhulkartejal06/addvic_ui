@@ -1,0 +1,11 @@
+
+<div class="content-container">
+    <mat-icon id="close-icon" (click)="closeDialog()">clear</mat-icon>
+    </div>
+<div>
+    <p class="a-o-i">Enter verification code</p>
+    <ng-otp-input #ngOtpInput (onInputChange)="onOtpChange($event)" *ngIf="showOtpComponent" [config]="{length:6}"></ng-otp-input>
+  <mat-card-actions>
+    <button mat-flat-button (click)="verifyotp()" color="primary">Verify OTP</button>
+</mat-card-actions>
+</div>

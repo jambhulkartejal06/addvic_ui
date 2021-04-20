@@ -1,0 +1,155 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 400%;
+    padding-top: 35px;
+    font-family: Poppins;
+    color:#129fb8;
+}
+
+.main{
+    margin: 25px 0px;
+    color:#263238;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+.heading img {
+    position: relative;
+
+}
+.heading h2{
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 580px){
+    .row-2 {
+     text-align: center; 
+    }
+ }
+ 
+ .center {
+    margin: 0 auto;
+    color: #129fb8;
+    font-family: Poppins;
+    }
+    .bold {
+    font-size: 350%;
+    text-align: left !important;
+    font-family: Poppins;
+    }
+    .box1{
+    width: 50%;
+    }
+    .clear{
+    clear: both;
+    }
+    
+    .row-2 {
+    width: 100%;
+    background-color: #263238;
+    padding: 25px 0px;
+    }
+    
+    .row-2 ul li {
+    color: #e0e0e0;
+    list-style-type: none;
+    line-height: 22px;
+    }
+    .row-2 ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    }
+    .row-2 ul li b {
+    color: #129fb8;
+    }
+    
+    .row-2 ul li a:hover {
+    color: #be4e64;
+    }
+    
+    .row-3 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: #263238;
+    color: #666565;
+    }
+    .row-3 a {
+    text-decoration: none;
+    color: #666565;
+    }
+
+
+
+.row {
+    width: 100%;
+}
+.container1 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.box1 {
+    width: 50%;
+    float: left;
+}
+.box2 {
+    width: 50%;
+    float: right;
+}
+
+.pd1 {
+    padding-top: 250px;
+}
+.pd2 {
+    padding-top: 210px;
+}
+.pd3 {
+    padding-top: 200px;
+}
+.pd4 {
+    padding-top: 165px;
+}
+
+@media only screen and (max-width: 850px){
+    .box2 {
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+        width: 90%;
+        border-bottom: solid 1px #263238;
+       padding-bottom: 15px;
+    }
+    .box1 {
+        text-align: center;
+        margin: 0 auto;
+        width: 90%;
+        float: none;
+        margin-top: 15px;
+    }
+
+    .pd1 {
+        padding-top: 0px;
+    }
+    .pd2 {
+        padding-top: 0px;
+    }
+    .pd3 {
+        padding-top: 0px;
+    }
+    .pd4 {
+        padding-top: 0px;
+    }
+
+}

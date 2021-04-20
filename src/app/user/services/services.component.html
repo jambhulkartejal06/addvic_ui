@@ -1,0 +1,43 @@
+ <!-- <mat-card-content>
+    <form class="example-form" #serviceForm="ngForm">  
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+                    <mat-form-field appearance="outline" class="label-width">
+                        <input matInput [(ngModel)]="serviceObj.fullName" name="fullName" placeholder="Enter FullName" required fxFlex>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field appearance="outline" class="label-width">
+                        <input matInput [(ngModel)]="serviceObj.email" placeholder="Enter Email" name="email" required fxFlex>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field appearance="outline" class="label-width">
+                        <input matInput [(ngModel)]="serviceObj.mobile" placeholder="Enter Mobile No." name="mobile" required fxFlex>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Service List</mat-label>
+                     <mat-select [formControl]="serviceList" multiple>
+                            <mat-option *ngFor="let service of services" (click)="selectService(service)" [value]="service.services">
+                                {{service.services}}
+                            </mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </td>
+            </tr> 
+        </table>
+        <mat-card-actions>
+            <button mat-flat-button (click)="submit(serviceForm)" color="primary">Add</button>
+        </mat-card-actions>
+    </form>
+
+</mat-card-content> -->

@@ -1,0 +1,38 @@
+
+/* .main {
+    padding: 25px;
+    text-align: center;
+    width:80%;
+    margin: 0 auto;
+    overflow: hidden; 
+  
+    }
+ 
+    .header{
+        text-align:center '!important';
+        margin: 0 auto '!important';
+        display:inline;
+        font-family: Poppins;
+        color:#263238
+    }
+    .example-form{
+        padding: 8px; 
+        font-family: Poppins;
+        color:#263238  
+     }
+     .buttons{
+        position: absolute;
+        width: 100px;
+        transform: translateY(-50%);
+        padding-bottom: 4px;
+    }
+   */
+
+
+
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+  .disable{
+    cursor: no-drop;
+}

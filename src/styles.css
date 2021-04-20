@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '~font-awesome/css/font-awesome.css';
+
+
+body { 
+  font-family: 'Poppins', sans-serif  !important;
+    margin: 0;
+  }
+  
+  .basic-container {
+    padding: 30px;
+  }
+  
+  .version-info {
+    font-size: 8pt;
+    float: right;
+  }
+
+  .item {
+    padding: 0;
+    width: 100vw;
+    height: 300px;
+    background-color: crimson;
+    color: #fff;
+    font-size: 50px;
+    line-height: 300px;
+    text-align: center;
+  }
+
+  /* mat-custom-confirm-dialog */
+ 
+
+  .confirm-dialog-container .content-container{
+    margin: 5px 5px 15px 5px;
+    color: #263238;
+    display: flex;
+  }
+
+  .confirm-dialog-container #close-icon{
+    margin-left: auto;
+    order: 2;
+    font-weight: bolder;
+  }
+
+  .confirm-dialog-container .mat-dialog-container {
+    padding: 30px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+    min-height: inherit;
+    max-height: inherit;
+}
+
+.confirm-dialog-container #no-button{
+  background-color:#129fb8 ;
+  margin:10px;
+}
+
+.confirm-dialog-container #yes-button{
+  background-color:#be4e64; 
+  margin:10px;
+}
+.multiline-tooltip{
+  /* max-width: unset !important; */
+   font-size: 12px; 
+   background-color: #263238;
+}
+/* .mat-expansion-panel-content {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+} */
+
+/* ourtraining carousel */
+.carousel-slide-content{
+  position: relative !important;
+}
+
+.mat-icon{
+  cursor: pointer;
+}
+/* .mat-checkbox-layout {
+  white-space: break-spaces !important;
+  in
+} */

@@ -1,0 +1,172 @@
+<div class="image-content">
+    <img src="../../../assets/contact_us.svg" alt="image" class="image-size">
+     </div>
+     <div class="clear"></div>                              
+     <div class="container">
+         <div class="box1">
+     <h3>CONTACT US</h3>
+     <p>
+         Please fill out form, and we'll get in touch shortly.
+     </p>
+     <div class="form-center">
+     <form class="example-form" #contactForm="ngForm">
+         <table>
+                     <tr>
+                         <td>
+                             <mat-form-field appearance="outline" class="label-width">
+                               <mat-label>Full Name</mat-label>
+                                 <input matInput [(ngModel)]="conObj.fullName" name="fullName" required fxFlex>
+                             </mat-form-field>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <mat-form-field appearance="outline" class="label-width">
+                                 <mat-label>Email</mat-label>
+                                 <input matInput [(ngModel)]="conObj.email" name="email" required fxFlex>
+                             </mat-form-field>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             <mat-form-field appearance="outline" class="label-width">
+                                 <mat-label>Mobile Number</mat-label>
+                                 <input matInput [(ngModel)]="conObj.mobileNumber" name="mobileNumber" required fxFlex>
+                             </mat-form-field>
+                         </td>
+                     </tr>
+     
+                     <tr>
+                         <td>
+                             <mat-form-field appearance="outline" class="label-width">
+                                 <mat-label>Message</mat-label>
+                                 <textarea matInput [(ngModel)]="conObj.message"  name="message" required fxFlex></textarea>
+                             </mat-form-field>
+                         </td>
+                     </tr>
+                         </table>
+                         <mat-card-actions>
+                             <button mat-flat-button (click)="send(contactForm)"  type="submit">Send</button>
+                         </mat-card-actions>
+                            </form>
+                         </div>
+         </div>
+         <div class="box2">
+     <h4>OTHER WAYS TO CONNECT...</h4>
+     <section>
+        
+            
+             <p> <b>Phone:</b> 
+            <a class="phone-color" [href]="'tel:'+location.phoneNumber">{{location.phoneNumber | phoneFilter}}</a><br>
+            <!-- <a [href]="'tel:'+ location.phoneNumber">{{location.phoneNumber | phoneFilter}}</a> -->
+             </p>
+             <p> <b>Email:</b> info@addvic.com </p>  
+             <p> <b>Address:</b> <br>
+                 Chanakya Nagari, Flat no. 307, 3rd Floor, Sinhgad Rd, 
+                 above Dr. Dudhbhate Netralaya, Anand Nagar, Pune, Maharashtra 411051</p>
+             <p>
+                 <b>Our Social Media Links: </b>
+                 
+             </p>  
+                
+             <div>
+                 <a href="https://www.instagram.com/addvic_technology/">
+                     <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
+                     </a>
+                     <a href="https://www.facebook.com/addvictechnology">
+                         <i class="fa fa-facebook-f fa-fw" style="font-size:24px"></i>
+                         </a>
+                         <a href="https://www.linkedin.com/company/addvic">
+                         <i class="fa fa-linkedin fa-fw" style="font-size:24px"></i>
+                       </a>
+                       <a href="https://www.youtube.com/">
+                        <i class="fa fa-youtube fa-fw" style="font-size:24px"></i>
+                      </a>
+                      <a href="https://wa.me/message/MN4AEW3ISURRK1">
+                        <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
+                      </a>
+             </div>  
+     </section>
+         </div>
+         <div class="clear"></div>     
+     </div>
+
+   
+
+
+     <div class="row-2">
+        <div class="container">
+            <mat-grid-list rowHeight="1:0.6"
+            [responsive]="responsive"
+            (responsiveColsChange)="cols = $event">
+            <mat-grid-tile>
+                
+                <ul>
+                    <li><b>Important Links :</b></li>
+                    <li><a routerLink="/home">Home</a></li>
+                    <li><a routerLink="/about">About Us</a></li>
+                    <li><a routerLink="/certificate/certificateNumber">Certificate Verification</a></li>
+                    <li><a routerLink="/create/feedback">Contact Us</a></li>
+                    <li><a routerLink="/feedback">Feedback Form</a></li>
+                    <li><a routerLink="/student/login">Login</a></li>
+                </ul>
+            </mat-grid-tile>
+           
+            <mat-grid-tile>
+                <ul>
+                    <li><b>Our Other Accounts Here :</b></li>
+                    <li><a href="https://www.instagram.com/addvic_technology/">
+                        <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
+                        Instagram</a></li>
+                    <li><a href="https://www.facebook.com/addvictechnology">
+                        <i class="fa fa-facebook-f fa-fw" style="font-size:24px"></i>
+                        Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/addvic">
+                        <i class="fa fa-linkedin fa-fw" style="font-size:24px"></i>
+                        Linkedin</a></li>
+                    <li><a href="https://www.youtube.com/">
+                        <i class="fa fa-youtube fa-fw" style="font-size:24px"></i>
+                        Youtube</a></li>
+                    <li><a href="https://wa.me/message/MN4AEW3ISURRK1">
+                        <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
+                        Whatsapp</a></li>
+                </ul>
+            </mat-grid-tile>
+        
+            <mat-grid-tile>
+                <ul>
+                    <li><b>Our Privacy Policy is Here :</b></li>
+                    <li><a routerLink="/privacy">Privacy Policy</a></li><br>
+                    <li><b>About Our Terms & Conditions :</b></li>
+                    <li><a routerLink="/termsAndCondition">Terms & Conditions</a></li><br>
+                    <li><a routerLink="/create/form" style="color: #e2b84f;">We are Hiring !</a></li>
+                    </ul>
+            </mat-grid-tile>
+            <mat-grid-tile>
+           
+                <ul>
+                    <li><b>Phone :</b></li>
+                    <li><a href="tel:18002671818">18002671818</a></li>
+                    <li><b>Email :</b></li>
+                    <li><a href="mailto:info@addvic.com">info@addvic.com</a></li>
+                    <li><b>Address :</b></li>
+                    <li>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
+                        Anand Nagar, <br> Pune - 411051</li>
+                    </ul>
+        
+               </mat-grid-tile>
+        
+            </mat-grid-list>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="row-3">
+            CIN No.: U72900PN2020OPC194352
+            </div>
+            <div class="row-3">
+                GST No.: 27AAUCA0988N1ZQ
+                </div>
+        <div class="row-3">
+        All Rights Reserved @ <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
+        </div>
+        

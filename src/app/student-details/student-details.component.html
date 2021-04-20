@@ -1,0 +1,47 @@
+<mat-card class="example-card">
+        
+    <div>
+    <mat-icon aria-hidden="false" (click)="close()">clear</mat-icon>
+     <i class="fa fa-print fa-fw" (click)="printPage()" style="font-size:24px"></i>
+    <!-- <i class="fa fa-download fa-fw" (click)="downloadPDF()" style="font-size:24px"></i> -->
+   
+    </div>
+    <div id="content" #content>
+        <img src="../assets/logo addvic .svg" alt="image" width="120px">
+      </div>
+      <div>
+          Addvic Technology (OPC) Pvt Ltd.
+          <p> <b> Website: </b>  www.addvic.com </p>
+          <p> <b> Mail Id: </b>  info@addvic.com </p>
+          <p> <b> Contact No.: </b> 18002671818 </p>
+          <p> <b> Adress: </b>  Flat No.307, Chanakya Nagri, Opp. McDonold's, Anand Nagar,Sinhagad Road,
+          pune - 411051. </p>
+      </div>
+      <mat-divider></mat-divider>
+      
+    
+            <mat-card-header class="header">
+                <div class="mat-card-header-text">
+                <mat-card-title>Details</mat-card-title>
+            </div>
+            </mat-card-header> 
+           
+                        <tr> 
+                            <img src="../assets/bird4.jpg" alt="Girl in a jacket" width="100" height="100">
+                        </tr>
+                       
+                  
+                    <div *ngFor="let item of studData | keyvalue: originalOrder">
+                       <span [hidden]="item.key === 'role' || item.key ==='user_id'">
+                        {{item.key |titlecase}} : {{item.value}}
+                        </span>
+                       </div> 
+              
+               
+            </mat-card>
+            
+
+
+
+
+

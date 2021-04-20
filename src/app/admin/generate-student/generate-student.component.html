@@ -1,0 +1,279 @@
+<mat-card class="example-card">
+
+    <mat-card-header class="text">
+        <mat-card-title>Student Form</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+        <form class="container" flexLayoutAlign="center" [formGroup]="userForm">
+
+            <table class="container" flexLayoutAlign="center" cellspacing="0">
+                 <tr>
+                    <td>
+                        <input #fileInput type="file" (change)="onFileInput($event)" accept="image/*" placeholder="choose a file" />
+                    </td>
+                </tr>                              
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Firstname</mat-label>
+                            <input matInput [(ngModel)]="studObj.firstName" name="firstName" formControlName="firstName" required>
+                        </mat-form-field>
+ 
+                    </td>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Middlename</mat-label>
+                            <input matInput [(ngModel)]="studObj.middleName" name="middleName" formControlName="middleName" required>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Lastname</mat-label>
+                            <input matInput [(ngModel)]="studObj.lastName" name="lastName" formControlName="lastName" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+
+                <tr>
+                <td>
+                <mat-label> Gender : </mat-label>
+                <mat-radio-group aria-label="Select an option"  [(ngModel)]="studObj.gender"
+                 formControlName="gender">
+                
+                    <mat-radio-button class="radio-button" *ngFor="let gender of genders" [value]="gender" >
+                        {{ gender }}
+                    </mat-radio-button>
+                </mat-radio-group>
+                </td>
+                </tr> &nbsp;
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Mothersname</mat-label>
+                            <input matInput [(ngModel)]="studObj.mothersName" name="mothersName" formControlName="mothersName" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>MobileNumber</mat-label>
+                            <input matInput [(ngModel)]="studObj.mobileNumber" name="mobileNumber" formControlName="mobileNumber" required>
+
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>ParentsNumber</mat-label>
+                            <input matInput [(ngModel)]="studObj.parentNumber" name="parentNumber" formControlName="parentNumber" required>
+
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Address</mat-label>
+                            <input matInput [(ngModel)]="studObj.address" name="address" formControlName="address" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>City</mat-label>
+                            <input matInput [(ngModel)]="studObj.city" name="city" formControlName="city" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>State</mat-label>
+                            <input matInput [(ngModel)]="studObj.state" name="state" formControlName="state" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Pincode</mat-label>
+                            <input matInput [(ngModel)]="studObj.pincode" name="pincode" formControlName="pincode" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>AdharNumber</mat-label>
+                            <input matInput [(ngModel)]="studObj.adharNumber" name="adharNumber" formControlName="adharNumber" required>
+
+                        </mat-form-field>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width" appearance="outline">
+                            <mat-label>DateOfBirth</mat-label>
+                            <input matInput [matDatepicker]="picker" [(ngModel)]="studObj.dateOfBirth" name="dateOfBirth" formControlName="dateOfBirth" required>
+                            <mat-datepicker-toggle matSuffix [for]="picker">
+                              <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+                            </mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          </mat-form-field>
+                        <!-- <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                             <mat-label>DateOfBirth</mat-label> 
+                            <input matInput [(ngModel)]="studObj.dateOfBirth" name="dateOfBirth" formControlName="dateOfBirth" required> -->
+                            <!-- <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker> -->
+                        <!-- </mat-form-field> -->
+                    </td>
+
+                    <!-- <tr>
+                        <td>
+                            <mat-form-field appearance="outline" class="label-width">
+                                <mat-label>DateOfBirth</mat-label>
+                                <input matInput [(ngModel)]="studObj.dateOfBirth" name="dateOfBirth" formControlName="dateOfBirth" [matDatepicker]="picker" required>
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                        </td> -->
+
+
+
+
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>HigherQualification</mat-label>
+                            <input matInput [(ngModel)]="studObj.higherQualification" name="higherQualification" formControlName="higherQualification" required>
+
+                        </mat-form-field>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Email</mat-label>
+                            <input matInput value='{{emailid}}' class="disable" readonly>
+                        </mat-form-field>
+                    </td>
+               </tr>
+               
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Username</mat-label>
+                            <input matInput value='{{emailid}}' class="disable" readonly>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                
+                <!-- <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="label-width">
+                            <mat-label>Email</mat-label>
+                            <input matInput [(ngModel)]="studObj.email" name="email" formControlName="email" class="disable" readonly>
+
+                        </mat-form-field>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="label-width">
+                            <mat-label>Username</mat-label>
+                            <input matInput [(ngModel)]="studObj.email" name="email" formControlName="email" class="disable" readonly>
+
+                        </mat-form-field>
+                    </td>
+                </tr>
+ -->
+
+
+
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Password</mat-label>
+                            <input matInput [(ngModel)]="studObj.password" type="password" name="password" formControlName="password" required>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Blood Group</mat-label>
+                           
+                            <mat-select>
+                                <mat-option *ngFor="let blood of bloodGroup" (click)="onBloodGroupSelect(blood)" [value]="blood.bloodGroup">
+                                    {{blood.bloodGroup}}
+                                </mat-option>
+                            </mat-select>
+                           
+                           
+                            <!-- <input matInput [(ngModel)]="studObj.bloodGroup" name="bloodGroup" formControlName="bloodGroup" required> -->
+                            <!-- <mat-select [(value)]="selected">
+                                <mat-option>None</mat-option>
+                                <mat-option value="option1">A+</mat-option>
+                                <mat-option value="option2">O+</mat-option>
+                                <mat-option value="option3">B+</mat-option>
+                                <mat-option value="option3">AB+</mat-option>
+                                <mat-option value="option3">A-</mat-option>
+                                <mat-option value="option3">O-</mat-option>
+                                <mat-option value="option3">B-</mat-option>
+                                <mat-option value="option3">AB-</mat-option>
+                              </mat-select> -->
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Role</mat-label>
+                            <input matInput [(ngModel)]="mySelectedItem" type="role" name="role" formControlName="role" class="disable" readonly>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                 <tr>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Course List</mat-label>
+                            <mat-select>
+                                <mat-option *ngFor="let course of courses" (click)="onCourseSelect(course)" [value]="course.course_id">
+                                    {{course.courseName}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="outline" class="container" fxLayout="row" flexlayout.xs="coloumn" flexLayoutWrap flexLayoutGap="0.5%" flexLayoutAlign="center">
+                            <mat-label>Batch List</mat-label>
+                            <mat-select>
+                                <mat-option *ngFor="let batch of batches" (click)="onBatchSelect(batch)" [value]="batch.batch_id">
+                                    {{batch.batch}}
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </td>
+                </tr> 
+
+                <!-- <tr>
+                    <td>
+                        <input #fileInput type="file" (change)="onFileInput($event)" accept="pdf/*" placeholder="choose a file" />
+                    </td>
+                </tr> -->
+            </table>
+            <mat-card-actions class="container" flexLayoutAlign="center">
+                <button mat-flat-button (click)="submit()" *ngIf="!isEditMode" color="primary" type="button">Add</button> 
+                <button mat-flat-button (click)="updateStudent()" *ngIf="isEditMode" color="primary" type="button">Update</button>
+            </mat-card-actions>
+        </form>
+
+    </mat-card-content>
+  
+</mat-card>

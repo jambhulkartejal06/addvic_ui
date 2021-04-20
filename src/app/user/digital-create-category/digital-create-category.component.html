@@ -1,0 +1,20 @@
+<mat-card-content>
+    <form class="example-form" #catForm="ngForm">  
+        <table class="example-full-width" cellspacing="0">
+            <tr>
+                <td>
+
+                    <mat-form-field appearance="outline" class="example-full-width">
+                        <input matInput placeholder="Add category name" [(ngModel)]="cateObj.category" name="category" required>
+                    </mat-form-field>
+                </td>
+            </tr>
+
+        </table>
+        <mat-card-actions>
+            <button mat-flat-button (click)="createCategory(catForm)" color="primary">Add</button>
+        </mat-card-actions>
+    </form>
+
+</mat-card-content>
+

@@ -1,0 +1,148 @@
+<div>
+    <img src="../assets/feedback.svg" alt="image">
+</div>
+
+<div class="row">
+    <div class="container">
+        <!-- <div class="box1">
+            <img src="../assets/feedback.svg" alt="image">
+        </div> -->
+        <div class="box2">
+            <h3>Feedback Form</h3>
+       
+            <mat-card-content>
+                <form class="example-form" #feedbackForm="ngForm">
+                    <table>
+                                <tr>
+                                    <td>
+                                        <mat-form-field appearance="outline" class="label-width">
+                                            <mat-label>Full Name</mat-label>
+                                            <input matInput [(ngModel)]="feedbackObj.fullName" name="fullName" placeholder="Enter Full Name" required fxFlex>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mat-form-field appearance="outline" class="label-width">
+                                            <mat-label>Email</mat-label>
+                                            <input matInput [(ngModel)]="feedbackObj.email" placeholder="Enter Email" name="email" required fxFlex>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <mat-form-field appearance="outline" class="label-width">
+                                            <mat-label>Mobile Number</mat-label>
+                                            <input matInput [(ngModel)]="feedbackObj.mobileNumber" placeholder="Enter Mobile No." name="mobileNumber" required fxFlex>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <mat-form-field appearance="outline" class="label-width">
+                                            <mat-label>Feedback</mat-label>
+                                            <textarea matInput [(ngModel)]="feedbackObj.message" placeholder="Give your feedback here" name="message" required fxFlex></textarea>
+                                        </mat-form-field>
+                                    </td>
+                                </tr>
+                                    </table>
+                                    <mat-card-actions>
+                                        <button mat-flat-button (click)="send(feedbackForm)" color="primary" type="submit">Send</button>
+                                    </mat-card-actions>
+                                       </form>
+                                          </mat-card-content>
+                                      
+        </div>
+    </div>
+</div>
+<div class="clear"></div>
+
+
+
+
+<div class="row-2">
+    <div class="container1">
+        <mat-grid-list rowHeight="1:0.6"
+        [responsive]="responsive"
+        (responsiveColsChange)="cols = $event">
+        <mat-grid-tile>
+            
+            <ul>
+                <li><b>Important Links :</b></li>
+                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/about">About Us</a></li>
+                <li><a routerLink="/certificate/certificateNumber">Certificate Verification</a></li>
+                <li><a routerLink="/create/feedback">Contact Us</a></li>
+                <li><a routerLink="/feedback">Feedback Form</a></li>
+                <li><a routerLink="/student/login">Login</a></li>
+            </ul>
+        </mat-grid-tile>
+       
+        <mat-grid-tile>
+            <ul>
+                <li><b>Our Other Accounts Here :</b></li>
+                <li><a href="https://www.instagram.com/addvic_technology/">
+                    <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
+                    Instagram</a></li>
+                <li><a href="https://www.facebook.com/addvictechnology">
+                    <i class="fa fa-facebook-f fa-fw" style="font-size:24px"></i>
+                    Facebook</a></li>
+                <li><a href="https://www.linkedin.com/company/addvic">
+                    <i class="fa fa-linkedin fa-fw" style="font-size:24px"></i>
+                    Linkedin</a></li>
+                <li><a href="https://www.youtube.com/">
+                    <i class="fa fa-youtube fa-fw" style="font-size:24px"></i>
+                    Youtube</a></li>
+                <li><a href="https://wa.me/message/MN4AEW3ISURRK1">
+                    <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
+                    Whatsapp</a></li>
+            </ul>
+        </mat-grid-tile>
+    
+        <mat-grid-tile>
+            <ul>
+                <li><b>Our Privacy Policy is Here :</b></li>
+                <li><a routerLink="/privacy">Privacy Policy</a></li><br>
+                <li><b>About Our Terms & Conditions :</b></li>
+                <li><a routerLink="/termsAndCondition">Terms & Conditions</a></li><br>
+                <li><a routerLink="/hiring" style="color: #e2b84f;">We are Hiring !</a></li>
+                </ul>
+        </mat-grid-tile>
+        <mat-grid-tile>
+       
+            <ul>
+                <li><b>Phone :</b></li>
+                <li><a href="tel:18002671818">18002671818</a></li>
+                <li><b>Email :</b></li>
+                <li><a href="mailto:info@addvic.com">info@addvic.com</a></li>
+                <li><b>Address :</b></li>
+                <li>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
+                    Anand Nagar, <br> Pune - 411051</li>
+                </ul>
+    
+           </mat-grid-tile>
+    
+        </mat-grid-list>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="row-3">
+        CIN No.: U72900PN2020OPC194352
+        </div>
+        <div class="row-3">
+            GST No.: 27AAUCA0988N1ZQ
+            </div>
+    <div class="row-3">
+    All Rights Reserved @ <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
+    </div>
+
+
+
+
+
+
+
+
+
+

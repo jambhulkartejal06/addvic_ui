@@ -1,0 +1,153 @@
+.row {
+    width: 100%;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+}
+.box1 {
+    width: 50%;
+    float: left;
+}
+.box2 {
+    width: 50%;
+    margin-left: 50%;
+    padding-top: 7%;
+}
+.clear {
+    clear: both;
+}
+
+.box2 h3 {
+    font-weight: bold;
+    margin: 0px 0px 0px 0px;
+    font-family: Poppins;
+    color: #129fb8;
+    font-size: 400%;
+    line-height: 60px;
+
+}
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+    background-color: #129fb8 !important;
+    color: white;
+}
+
+.example-form{
+    padding-right: 4px;
+    font-family: Poppins;
+    color:#263238;
+    }
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #129fb8;
+}
+
+ .mat-form-field-flex {
+    width: 100%;
+ }
+ .mat-form-field{
+    width: 255%;
+ }
+
+ @media only screen and (max-width: 1050px) {
+    .mat-form-field{
+        width: 200%;
+     }
+     .box2 h3 {
+         font-size: 319%;
+     }
+ }
+
+ @media only screen and (max-width: 1050px) {
+    .box1 {
+        float: none;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .box2 {
+        margin-left: 0px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .example-form{
+        width: 66% !important;
+        margin: 0 auto !important;
+     }
+ }
+
+ @media only screen and (max-width: 520px){
+    .example-form{
+       width: 95% !important;
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 580px){
+    .row-2 {
+     text-align: center; 
+    }
+ }
+ 
+ .center {
+    margin: 0 auto;
+    color: #129fb8;
+    font-family: Poppins;
+    }
+    .bold {
+    font-size: 350%;
+    text-align: left !important;
+    font-family: Poppins;
+    }
+    .box1{
+    width: 50%;
+    }
+    .clear{
+    clear: both;
+    }
+    
+    .row-2 {
+    width: 100%;
+    background-color: #263238;
+    padding: 25px 0px;
+    }
+    
+    .row-2 ul li {
+    color: #e0e0e0;
+    list-style-type: none;
+    line-height: 22px;
+    }
+    .row-2 ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    }
+    .row-2 ul li b {
+    color: #129fb8;
+    }
+    
+    .row-2 ul li a:hover {
+    color: #be4e64;
+    }
+    
+    .row-3 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: #263238;
+    color: #666565;
+    }
+    .row-3 a {
+    text-decoration: none;
+    color: #666565;
+    }

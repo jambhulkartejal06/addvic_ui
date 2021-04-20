@@ -1,0 +1,372 @@
+
+<div>
+    <img src="../../../assets/hiring_superheroes.svg" alt="image" class="image-size">
+     </div>
+
+
+<div class="container">
+    <mat-card class="example-card">
+        <mat-card-header class="text">
+            <mat-card-title>We are Hiring..!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="example-form" [formGroup]="hiringForm">
+                <table class="example-full-width" cellspacing="0">
+                  
+                    <tr>
+                        <td class="center">
+                            <mat-form-field appearance="outline">
+                                <mat-label>Full Name</mat-label>
+                                <input matInput [(ngModel)]="hiringObj.fullName" name="fullName" formControlName="fullName" required>
+    
+                            </mat-form-field>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Enter Your Email</mat-label>
+                                <input matInput [(ngModel)]="hiringObj.email" name="email"  formControlName="email" required>
+                            </mat-form-field>
+    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Enter Mobile Number</mat-label>
+                                <input matInput [(ngModel)]="hiringObj.phoneNo" name="phoneNo"  formControlName="phoneNo" required>
+                            </mat-form-field>
+    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-form-field appearance="outline">
+                                <mat-label>Select Designation</mat-label>
+                                <mat-select>
+                                    <mat-option *ngFor="let designation of designationName" (click)="onDesignationSelect(designation)" [value]="designation.designationName">
+                                        {{designation.designationName}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>
+                            <mat-form-field appearance="outline">
+                                <input matInput placeholder="Message (Optional)" [(ngModel)]="hiringObj.message" name="message"  formControlName="message" required>
+                            </mat-form-field>
+    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <mat-label><small>Upload Your Resume: </small></mat-label>
+                            <input #fileInput type="file" (change)="onFileInput($event)" accept="pdf/*"/>
+                        </td>
+                    </tr>
+    
+                </table>
+                <mat-card-actions>
+                    <button mat-flat-button (click)="addHiringDetails()" (click)="clearForm()" color="primary" type="submit">Send</button>
+                </mat-card-actions>
+            
+            </form>
+        </mat-card-content>
+      
+    </mat-card> 
+</div>
+
+
+
+
+<div class="clear"></div>
+
+<div class="row">
+    <div class="container">
+        <p>You can also mail your resume at <a href="mailto:info@addvic.com">info@addvic.com</a></p>
+      
+    </div>
+</div>
+
+<!--Start Box-1-->
+<div class="row">
+    <div class="containerabc">
+        <ul class="hiring">
+            <li class="img-align"><img src="../../../assets/CAE_Trainer.png" alt="" class="image-box"></li>
+            <li class="content">
+                <h3><strong>Mechanical CAE Trainer</strong></h3><br>
+                <p>
+                    <strong><i>Don't miss out this opportunity!!!</i></strong><br>
+
+                    Addvic Technology (OPC) Pvt Ltd is looking for a skilled Mechanical CAE trainer. The trainer should be a highly creative individual with an ability to develop innovative solutions to our student's problems. The candidate must also have the ability to communicate their technical ideas in a clear manner.
+
+<br><br>
+<strong>Responsibilities:</strong><br>
+
+• Must be able to teach students in both offline and online way.<br>
+• Actively taking students follow up, discussing their problems if any and resolving their queries.<br>
+• Analyzing problems or deficiencies and developing solutions to resolve them.<br>
+• Will have to do work on our clients services as well.<br>
+<br>
+<br>
+<strong>Requirements:</strong><br>
+
+• A candidate must be proficient with software’s such as Ansys, Hypermesh, ANSA.<br>
+• Knowledge of multiple CAE software’s will be added advantage.<br>
+• Industrial Domain knowledge will be added advantage.<br>
+• Must have in depth knowledge of Finite element analysis (FEA), Computational fluid dynamics (CFD),
+   Multibody dynamics (MBD), durability and optimization.<br>
+• Experience: Minimum 1 year of experience must be required (any Graduation and Post-Graduation).<br>
+• Ready for immediate joining.<br>
+<br>
+<strong>Job Location: </strong>Pune (currently work from home)<br>
+<br>
+<strong>CTC (per annum): </strong>96,000 INR to 2,40,000 INR (Depending on your performance)<br>
+                </p>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+<!--End Box_1-->
+
+
+
+
+<!--Start Box_2-->
+<div class="row">
+    <div class="containerabc">
+        <ul class="hiring">
+            <li class="img-align"><img src="../../../assets/CAD_Trainer.png" alt="" class="image-box"></li>
+            <li class="content">
+                <h3><strong>Mechanical CAD Trainer</strong></h3><br>
+                <p>
+                    <strong><i>Don't miss out this opportunity!!!</i></strong><br>
+
+                    Addvic Technology (OPC) Pvt Ltd is looking for a skilled Mechanical CAD trainer. The trainer should be a highly creative individual with an ability to develop innovative solutions to our student's problems. The candidate must also have the ability to communicate their technical ideas in a clear manner.
+<br><br>
+<strong>Responsibilities:</strong><br>
+
+• Must be able to teach students in both offline and online way.<br>
+• Actively taking students follow up, discussing their problems if any and resolving their queries.<br>
+• Analyzing problems or deficiencies and developing solutions to resolve them.<br>
+• Creating plans and designs using CAD technology.<br>
+<br>
+<strong>Requirements:</strong><br>
+
+• A candidate must be proficient with software’s such as AutoCAD, Creo, CATIA, UG NX, Solidworks, Inventor, Solidedge, Fusion 360.<br>
+• Knowledge of multiple CAD software’s will be added advantage.<br>
+• Industrial Domain knowledge will be added advantage.<br>
+• Experience: Minimum 1 year of experience must be required (any Graduation and Post-Graduation).<br>
+• Ready for immediate joining.<br>
+<br>
+<strong>Job Location: </strong>Pune (currently work from home).<br>
+<br>
+<strong>CTC (per annum): </strong>96,000 INR to 2,40,000 INR (Depending on your performance).<br>
+                </p>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="containerabc">
+        <ul class="hiring">
+            <li class="img-align"><img src="../../../assets/Domain_Trainer.png" alt="" class="image-box"></li>
+            <li class="content">
+                <h3><strong>Mechanical Domain Trainer</strong></h3><br>
+                <p>
+                    <strong><i>Don't miss out this opportunity!!!</i></strong><br>
+
+                    Addvic Technology (OPC) Pvt Ltd is looking for a skilled Mechanical Domain trainer. The trainer should be a highly creative individual with an ability to develop innovative solutions to our student's problems. The candidate must also have the ability to communicate their technical ideas in a clear manner.
+<br><br>
+<strong>Responsibilities:</strong><br>
+
+• Must be able to teach students in both offline and online way.<br>
+• Actively taking students follow up, discussing their problems if any and resolving their queries.<br>
+• Analyzing problems or deficiencies and developing solutions to resolve them.<br>
+• Will have to do work on our clients services as well.<br>
+<br>
+<strong>Requirements:</strong><br>
+
+• A candidate must be proficient with Domains such as Plastic, BIW, Seating, Lighting, Electric and Hybrid  Vehicles<br>
+• Knowledge of multiple Domains will be added advantage.<br>
+• Knowledge of multiple CAD and CAE Software’s will be added advantage.<br>
+• Experience: Minimum 1 year of experience must be required (any Graduation and Post-Graduation).<br>
+• Ready for immediate joining.<br>
+<br>
+<strong>Job Location: </strong>Pune (currently work from home).<br>
+<br>
+<strong>CTC (per annum): </strong> 96,000 INR to 2,40,000 INR (Depending on your performance).<br>
+                </p>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="containerabc">
+        <ul class="hiring">
+            <li class="img-align"><img src="../../../assets/Counsellor.png" alt="" class="image-box"></li>
+            <li class="content">
+                <h3><strong>Office Counsellor</strong></h3><br>
+                <p>
+                    <strong><i>We have an opening for you so don't miss out this opportunity!!!
+                    </i></strong><br>
+
+                    Addvic Technology (OPC) Pvt Ltd is looking for an organized Office Counsellor. The Counsellor should be committed to learning more and more about work and also should be very supportive, initiative and resourceful.
+<br><br>
+<strong>Responsibilities:</strong><br>
+
+• Assisting Students and their parent through detailed conversation to help them to enroll courses.<br>
+• Highlighting the benefits of specific courses in order to attract students.<br>
+• Maintaining students data, attendance sheet and complete fees.<br>
+• Actively taking students follow up, discussing their problems, resolving and providing proper guidance and support to them.<br> 
+• Handling office clients, if clients have any Queries, you have to discuss with our Technical team and resolve their queries.<br>
+<br>
+<strong>Requirements:</strong><br>
+
+• Fluency should be in three languages - English, Hindi and Marathi.<br>
+• Experience: (0-5) years (any graduation or post graduation).<br>
+• Complete knowledge of MS office and basic Computer knowledge.<br>
+• Ready for Immidiate joining.<br>
+<br>
+<strong>Job Location: </strong>Pune (currently work from home).<br>
+<br>
+<strong>CTC (per annum): </strong> 1,00,000 INR to 2,40,000 INR (Depending on your performance).<br>
+
+
+                </p>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="containerabc">
+        <ul class="hiring">
+            <li class="img-align"><img src="../../../assets/Digital_Marketing.png" alt="" class="image-box"></li>
+            <li class="content">
+                <h3><strong>Digital Marketing Executive</strong></h3><br>
+                <p>
+                    <strong><i>We have an opening for you so don't miss out this opportunity!!!
+                    </i></strong><br>
+
+                    Digital Marketing Managers are in charge of planning and managing marketing campaigns that promote a company’s brand, products, and services. Their duties include planning campaigns, analyzing metrics, and identifying trends. They typically have experience in art direction and social media. 
+<br><br>
+<strong>Responsibilities:</strong><br>
+
+• Monitor and report on website usage via Google Analytics and other tools, develop new sources of website traffic, as well as identify and improve under-performing areas of the website in terms of visitor numbers, user experience, and conversion rates.<br>
+• SEO + PPC + CRO: Improve website content where necessary, manage the online agency to identify requirements for updated content, coordinate the supply of SEO friendly copy for our website, ensure new creative content fits with our brand to maintain the website’s personality, ensure online content complements off-line activity, utilise any additional content sources where appropriate, conduct regular reviews of agency performance against agreed targets, implement cost effective paid campaigns to maximise conversion, enhance customer journey from first point of contact on our website through to post-booking stage, as well as test and monitor website conversion rates and improve or update appropriately.<br> 
+<br>
+<strong>Requirements:</strong><br>
+
+• Proven experience as a Digital Marketing Executive or similar.<br>
+• Excellent understanding of digital concepts and best practice.<br> 
+• Excellent communication and interpersonal skills.<br> 
+• Experience in creative content writing.<br>
+• Perfect knowledge of web analytic tools.<br> 
+• BSc\BA \BE\B.Tech, etc. in any field.<br> 
+• Experience in B2C social media, Google AdWords and email campaigns and SEO\SEM.<br>
+• Analytical mindset and critical thinking.<br>
+<br>
+<strong>Job Location: </strong>Pune (currently work from home).<br>
+<br>
+<strong>CTC (per annum): </strong> 1,00,000 INR to 2,40,000 INR (Depending on your performance).<br>
+
+
+                </p>
+            </li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+</div>
+
+
+<div class="row-2">
+    <div class="container1">
+        <mat-grid-list rowHeight="1:0.6"
+        [responsive]="responsive"
+        (responsiveColsChange)="cols = $event">
+        <mat-grid-tile>
+            <ul>
+                <li><b>Important Links :</b></li>
+                <li><a routerLink="/home">Home</a></li>
+                <li><a routerLink="/about">About Us</a></li>
+                <li><a routerLink="/certificate/certificateNumber">Certificate Verification</a></li>
+                <li><a routerLink="/create/feedback">Contact Us</a></li>
+                <li><a routerLink="/feedback">Feedback Form</a></li>
+                <li><a routerLink="/student/login">Login</a></li>
+            </ul>
+        </mat-grid-tile>
+       
+        <mat-grid-tile>
+            <ul>
+                <li><b>Our Other Accounts Here :</b></li>
+                <li><a href="https://www.instagram.com/addvic_technology/">
+                    <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
+                    Instagram</a></li>
+                <li><a href="https://www.facebook.com/addvictechnology">
+                    <i class="fa fa-facebook-f fa-fw" style="font-size:24px"></i>
+                    Facebook</a></li>
+                <li><a href="https://www.linkedin.com/company/addvic">
+                    <i class="fa fa-linkedin fa-fw" style="font-size:24px"></i>
+                    Linkedin</a></li>
+                <li><a href="https://www.youtube.com/">
+                    <i class="fa fa-youtube fa-fw" style="font-size:24px"></i>
+                    Youtube</a></li>
+                <li><a href="https://wa.me/message/MN4AEW3ISURRK1">
+                    <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
+                    Whatsapp</a></li>
+            </ul>
+        </mat-grid-tile>
+    
+        <mat-grid-tile>
+            <ul>
+                <li><b>Our Privacy Policy is Here :</b></li>
+                <li><a routerLink="/privacy">Privacy Policy</a></li><br>
+                <li><b>About Our Terms & Conditions :</b></li>
+                <li><a routerLink="/termsAndCondition">Terms & Conditions</a></li><br>
+                <li><a routerLink="/hiring" style="color: #e2b84f;">We are Hiring !</a></li>
+                </ul>
+        </mat-grid-tile>
+        <mat-grid-tile>
+       
+            <ul>
+                <li><b>Phone :</b></li>
+                <li><a href="tel:18002671818">18002671818</a></li>
+                <li><b>Email :</b></li>
+                <li><a href="mailto:info@addvic.com">info@addvic.com</a></li>
+                <li><b>Address :</b></li>
+                <li>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
+                    Anand Nagar, <br> Pune - 411051</li>
+                </ul>
+    
+           </mat-grid-tile>
+    
+        </mat-grid-list>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="row-3">
+        CIN No.: U72900PN2020OPC194352
+        </div>
+        <div class="row-3">
+            GST No.: 27AAUCA0988N1ZQ
+            </div>
+    <div class="row-3">
+    All Rights Reserved @ <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
+    </div>
+    
+
+
+
+

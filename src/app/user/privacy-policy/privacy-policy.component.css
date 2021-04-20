@@ -1,0 +1,98 @@
+.example-card {
+    max-width: 100%;
+    padding: 16px;
+  }
+  .main{
+      margin: 0px 0px;
+      padding: 143px;
+      background-color: #f6f6f6;
+  }
+  h4{
+      font-weight: bold;
+      font-family: Poppins;
+      color:#263238
+  }
+  mat-card{
+      font-family: Poppins;
+      color:#263238
+  }
+  .disable-selection {
+      -moz-user-select: none; /* Firefox */
+       -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+   -webkit-user-select: none; /* Chrome, Safari, and Opera */
+   -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+  }
+  @media only screen and (max-width: 900px){
+  .main{
+      padding: 35px;
+  }
+  }
+
+  .clear {
+      clear: both;
+  }
+
+  .container {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 580px){
+    .row-2 {
+     text-align: center; 
+    }
+ }
+ 
+ .center {
+    margin: 0 auto;
+    color: #129fb8;
+    font-family: Poppins;
+    }
+    .bold {
+    font-size: 350%;
+    text-align: left !important;
+    font-family: Poppins;
+    }
+    .box1{
+    width: 50%;
+    }
+    .clear{
+    clear: both;
+    }
+    
+    .row-2 {
+    width: 100%;
+    background-color: #263238;
+    padding: 25px 0px;
+    }
+    
+    .row-2 ul li {
+    color: #e0e0e0;
+    list-style-type: none;
+    line-height: 22px;
+    }
+    .row-2 ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    }
+    .row-2 ul li b {
+    color: #129fb8;
+    }
+    
+    .row-2 ul li a:hover {
+    color: #be4e64;
+    }
+    
+    .row-3 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: #263238;
+    color: #666565;
+    }
+    .row-3 a {
+    text-decoration: none;
+    color: #666565;
+    }
+    
