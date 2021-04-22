@@ -7,7 +7,7 @@ import { MaterialModule } from 'src/app/materialmodule';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PhoneFilterPipe } from '../phone-filter.pipe';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [ContactUsComponent, PhoneFilterPipe,],
@@ -17,7 +17,8 @@ import { PhoneFilterPipe } from '../phone-filter.pipe';
     MaterialModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlexLayoutModule,
   ]
 })
 export class ContactUsModule { }
