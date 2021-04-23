@@ -24,87 +24,91 @@
         ></mat-carousel-slide>
       </mat-carousel>
        
-        <!-- <ng-container *ngFor="let img of img_list; let i = index">
-           
-            <div class="slider" *ngIf="current == i" @fade>
-                <img class="img" [src]="img">
-            </div>
-        </ng-container> -->
     </div>
 </div> 
 
 
-        <!-- <img src="../assets/mechanical.svg" alt="image">
-      
-        <img src="../assets/ITandCSE.svg" alt="image">
-      -->
 
 <div class="row categories">
-    <h3>CHOOSE YOUR DEPARTMENT CATEGORIES</h3>
+    <h3 class="mat-display-1">Kindly Select your Department Category</h3>
 </div>
-<!-- <div fxLayout="row wrap">
-<mat-toolbar color="primary" style="height: 80px;">
-    <mat-toolbar-row>
-       
-        <span>Mechanical Courses</span>
-        <a [routerLink]="['/mechanical/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" width="60px" height="60px" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10"></a>
-        <span>IT Courses</span>
-        <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" width="60px" height="60px" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10"></a>
-        <span>Mechanical Courses</span>
-        <a [routerLink]="['/mechanical/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" width="60px" height="60px" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10"></a>
-        <span>IT Courses</span>
-        <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" width="60px" height="60px" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10"></a>
-        
-    </mat-toolbar-row>
-    </mat-toolbar>
-    </div> -->
 
-
-    <section>
-        <div>
+    <section class="icons">
+        <div class="icon-center">
             <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" fxLayoutGap="50px">
-                <div>
+                <div class="icon-over">
                     <a [routerLink]="['/mechanical/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" alt="" width="80px" height="80px"></a>
-                    <div>Mechanical Courses</div>
+                    <h3>Mechanical Domain Courses</h3>
                     </div>
-                    <div>
-                    <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" alt="" width="80px" height="80px"></a>
-                    <div>IT Courses</div>
+                    <div class="icon-over">
+                    <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active">
+						<img src="../../../assets/IT-icon.svg" alt="" width="80px" height="80px"></a>
+                    <h3>IT Courses / Programming</h3>
                     </div>
-                    <div>
-                    <a [routerLink]="['/graphic/service']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" alt="" width="80px" height="80px"></a>
-                    <div>Digital Marketing & Design</div>
+                    <div class="icon-over">
+                    <a [routerLink]="['/graphic/service']" routerLinkActive="router-link-active"><img src="../../../assets/Digital-Marketing.svg" alt="" width="80px" height="80px"></a>
+                    <h3>Digital Marketing & Graphics Design</h3>
                     </div>
-                    <div>
-                    <a [routerLink]="['/intern/service']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" alt="" width="80px" height="80px"></a>
-                    <div>Internship</div>
+                    <div class="icon-over">
+                    <a [routerLink]="['/intern/service']" routerLinkActive="router-link-active"><img src="../../../assets/Internship.svg" alt="" width="80px" height="80px"></a>
+                    <h3>Internship in various Domain</h3>
                     </div>
                     </div>
                     </div>
         </section>
+<section>
+<div class="Break-Line"></div>
 
 
-  
-      <!-- <div class="row">
-        <div class="container1">
-            <div class="box1">
-                <a [routerLink]="['/mechanical/courses']" routerLinkActive="router-link-active"><img src="./../../../assets/mechanicalicon.svg" alt=""></a>
-            </div>
-            <div class="box2">
-                <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active"><img src="./../../../assets/ITorCSEicon.svg" alt=""></a>
-                
-            </div>
-        </div>
-      </div> -->
+<h4 class="mat-display-1 text-center">Know about our Certification</h4>
 
-<div class="clear"></div>
 
-      <div class="row-2">
-        <div class="container">
-            <mat-grid-list rowHeight="1:0.6"
-            [responsive]="responsive"
-            (responsiveColsChange)="cols = $event">
-            <mat-grid-tile>
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+                <div class="Certificate-img">
+                    <img src="../../../assets/Certificate.svg" alt="" style="pointer-events: none">
+                 </div>
+                 <div class="Certificate-content">
+                    <h2 class="mat-h2">Government Authorised Certificate</h2>
+					 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+				 </div>
+</div>
+
+<div class="Break-Line-shade"></div>
+
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+                <div class="Certificate-img">
+                    <img src="../../../assets/Certificate.svg" alt="" style="pointer-events: none">
+                 </div>
+                 <div class="Certificate-content">
+                    <h2 class="mat-h2">Certificate from Addvic</h2>
+					 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+				 </div>
+</div>
+
+<div class="Break-Line-shade"></div>
+
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+                <div class="Certificate-img">
+                    <img src="../../../assets/Certificate.svg" alt="" style="pointer-events: none">
+                 </div>
+                 <div class="Certificate-content">
+                    <h2 class="mat-h2">Internship Certificate</h2>
+					 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+				 </div>
+</div>
+
+<div class="Break-Line"></div>
+	</section>
+
+
+
+
+
+
+<section>
+        <div class="footer footer-bg">
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
+                <div>
                 
                 <ul>
                     <li><b>Important Links :</b></li>
@@ -115,10 +119,9 @@
                     <li><a routerLink="/feedback">Feedback Form</a></li>
                     <li><a routerLink="/student/login">Login</a></li>
                 </ul>
-            </mat-grid-tile>
-           
-            <mat-grid-tile>
-                <ul>
+                    </div>
+                    <div>
+                    <ul>
                     <li><b>Our Other Accounts Here :</b></li>
                     <li><a href="https://www.instagram.com/addvic_technology/">
                         <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
@@ -136,41 +139,37 @@
                         <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
                         Whatsapp</a></li>
                 </ul>
-            </mat-grid-tile>
-        
-            <mat-grid-tile>
-                <ul>
+                    </div>
+                    <div>
+                    <ul>
                     <li><b>Our Privacy Policy is Here :</b></li>
                     <li><a routerLink="/privacy">Privacy Policy</a></li><br>
                     <li><b>About Our Terms & Conditions :</b></li>
                     <li><a routerLink="/termsAndCondition">Terms & Conditions</a></li><br>
                     <li><a routerLink="/hiring" style="color: #e2b84f;">We are Hiring !</a></li>
                     </ul>
-            </mat-grid-tile>
-            <mat-grid-tile>
-           
-                <ul>
+                    </div>
+                    <div>
+                    <ul>
                     <li><b>Phone :</b></li>
                     <li><a href="tel:18002671818">18002671818</a></li>
                     <li><b>Email :</b></li>
                     <li><a href="mailto:info@addvic.com">info@addvic.com</a></li>
                     <li><b>Address :</b></li>
-                    <li>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
-                        Anand Nagar, <br> Pune - 411051</li>
+						<li><address>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
+                        Anand Nagar, <br> Pune - 411051</address></li>
                     </ul>
-        
-               </mat-grid-tile>
-        
-            </mat-grid-list>
-            </div>
-        </div>
-        <div class="clear"></div>
-        <div class="row-3">
+                    </div>
+                    </div>
+                    </div>
+	
+	<div class="footer-last">
             CIN No.: U72900PN2020OPC194352
             </div>
-            <div class="row-3">
+            <div class="footer-last">
                 GST No.: 27AAUCA0988N1ZQ
                 </div>
-        <div class="row-3">
-        All Rights Reserved @ <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
+	<div class="footer-last" style="padding-bottom: 30px">
+        All Rights Reserved &copy; <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
         </div>
+        </section>

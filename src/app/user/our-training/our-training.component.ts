@@ -44,5 +44,3 @@ export class OurTrainingComponent implements OnInit {
     // }, 5000);
   } 
 }
-
-  
