@@ -1,80 +1,33 @@
-.paragraph{
-    /* text-align: center; */
-    width:100%;
-    margin: 0 auto;
-    background-color: rgb(37, 74, 116);  
-    font-family: Poppins;
-    /* color:#263238; */
+.footer-bg {
+	background-color: #243038;
 }
-.main-header{
-   padding: 4px;
+.footer ul li {
+	list-style-type: none;
+	line-height: 30px;
 }
-
- .mat-typography h2 {
-   font-family: Poppins;
-    color:#263238;
+.footer ul li a, .footer ul li address, .footer-last a {
+	text-decoration: none;
+	color: #F6F6F6;
 }
-.mat-typography p {
-   font-family: Poppins;
-   color:#263238;
+.footer ul li b {
+	color: #F2BA45;
 }
-a{
-   font-family: Poppins;
-   color: #263238;
-  
-}
-a:hover {
-   color: #be4e64;
-}
-.image-content{
-   width:100%;
-   margin: 0 auto;
-}
-.example-form{
-padding-right: 4px;
-font-family: Poppins;
-color:#263238;
-}
-.image-size{
-   width: 100%;
+.footer-last {
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 0px;
+	text-align: center;
+	background-color: #243038;
+	color: #F6F6F6;
 }
 
-.container{
-   width: 75%;
-   margin: 0 auto;
 
-   padding: 16px;
+@media only screen and (max-width: 959px){
+	.footer {
+		text-align: center;
+	}
 }
-.box1{
-   width: 50%;
-  
-   float: left;
-}
-.box2{
-   width: 50%;
-  text-align: center;
-    margin-left: 50%; 
 
-}
-.clear{
-   clear: both;
-}
-.box1 h3{
-   font-weight: bold;
-   margin: 0px 0px 0px 0px;
-   font-family: Poppins;
-   color: #129fb8;
-   font-size: 400%;
-   line-height: 60px
-}
-p{
-   font-family: Poppins;
-   color:#263238;
-}
-.mat-form-field{
-   width: 255%;
-}
- 
 
 
 /* default and hover color */

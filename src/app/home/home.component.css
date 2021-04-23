@@ -1,118 +1,29 @@
-.carousel-control-prev:hover{
-  background: rgba(0, 0, 0, 0.7);
+.footer-bg {
+	background-color: #243038;
 }
-.carousel-control-next:hover{
-  background: rgba(0, 0, 0, 0.7);
+.footer ul li {
+	list-style-type: none;
+	line-height: 30px;
 }
-h3{
-font-weight: bold;
-color: blue;
-font-size: 500%;
+.footer ul li a, .footer ul li address, .footer-last a {
+	text-decoration: none;
+	color: #F6F6F6;
 }
-.mat-typography{
-background-color:#e0e0e0;
-height: 38% !important;
-
+.footer ul li b {
+	color: #F2BA45;
 }
-
-.container {
-width: 100%;
-margin: 0 auto;
-}
-
-.row {
-width: 100%;
-padding: 75px 0 60px 0;
-background-color: #f6f6f6;
-}
-.border-right {
-border-right: solid 1px #263238;
-
-}
-.border-right-2 {
-border-right: solid 1px #263238;
-
-}
-
-@media only screen and (max-width: 960px){
-.border-right-2 {
-  border-right: none !important;
-}
-}
-
-@media only screen and (max-width: 580px){
-.border-right-2 {
-  border-right: none !important;
-  border-bottom: solid 1px #263238;
-}
-.border-right {
-  border-right: none !important;
-  border-bottom: solid 1px #263238;
-  
-}
-.row{
-  padding: 20px 0 0px 0;
+.footer-last {
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 0px;
+	text-align: center;
+	background-color: #243038;
+	color: #F6F6F6;
 }
 
 
-
-
-
-
-.row-2 {
- text-align: center; 
-}
-}
-
-
-.center {
-margin: 0 auto;
-color: #129fb8;
-font-family: Poppins;
-}
-.bold {
-font-size: 350%;
-text-align: left !important;
-font-family: Poppins;
-}
-.box1{
-width: 50%;
-}
-.clear{
-clear: both;
-}
-
-.row-2 {
-width: 100%;
-background-color: #263238;
-padding: 25px 0px;
-}
-
-.row-2 ul li {
-color: #e0e0e0;
-list-style-type: none;
-line-height: 25px;
-}
-.row-2 ul li a {
-text-decoration: none;
-color: #e0e0e0;
-}
-.row-2 ul li b {
-color: #129fb8;
-}
-
-.row-2 ul li a:hover {
-color: #be4e64;
-}
-
-.row-3 {
-width: 100%;
-text-align: center;
-padding-bottom: 15px;
-background-color: #263238;
-color: #666565;
-}
-.row-3 a {
-text-decoration: none;
-color: #666565;
+@media only screen and (max-width: 959px){
+	.footer {
+		text-align: center;
+	}
 }
