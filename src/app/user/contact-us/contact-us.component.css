@@ -1,3 +1,28 @@
+.contact {
+	margin: 50px 0px;
+}
+.contact table {
+	align-items: right;
+	justify-content: right;
+	display: grid;
+}
+
+.box-1, .box-2 {
+	width: 50%;
+}
+
+.box-2 a i {
+	text-decoration: none;
+	color: #129fb8;
+}
+
+button {
+	background-color: #129fb8;
+   color:white;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
 .footer-bg {
 	background-color: #243038;
 }
@@ -23,13 +48,47 @@
 
 
 @media only screen and (max-width: 959px){
+	.box-1, .box-2 {
+	width: 100%;
+}
+	
+	.box-2 {
+		text-align: center;
+	}
 	.footer {
 		text-align: center;
 	}
+	
+	.contact table {
+	align-items: center;
+	justify-content: center;
+	display: grid;
+}
+	
+	.mat-card-actions {
+	display: grid;
+	justify-content: center !important;
+}
+}
+.mat-card-actions {
+	display: grid;
+	justify-content: end;
 }
 
+/* default and hover color */
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+   color: #129fb8;
+}
 
+/* focused color */
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+   color: #129fb8;
+}
 
+/* floating label color */
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label { 
+   color: #129fb8;
+}
 /* default and hover color */
 ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
    color: #129fb8;
