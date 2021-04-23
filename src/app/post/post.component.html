@@ -1,27 +1,15 @@
-<div class="content">
-    <div class="container">
-       <!-- <p *ngIf="posts.length>0">{{posts[posts.length-1]}}</p>  -->
-      <ng-container class="row" *ngFor="let post of posts">
-          <!-- <p *ngIf="!last"> {{post}}</p> -->
-        <div class="blogpost">
-          <h3><a href="/getpost/{{post.id}}" class="blog-title">{{post.title}}</a></h3>
-          <div>
-            <i class="fa fa-user"></i> Author: <p>{{post.username}}</p>
-          </div>
-          <p [innerHTML]="post.content"></p>
-          <div>
-            <a mat-button href="/getpost/{{post.id}}" class="read-more">Read More</a>
-          </div>
-          <hr>
-        </div>
-        <hr>
-      </ng-container>
-    </div>
-  </div>
-
-
-
-  <!-- <p *ngIf="list.length>0">{{list[list.length-1]}}</p>
-  <ng-container *ngFor="let item of list; let last=last">
-     <p *ngIf="!last"> {{item}}</p>
-  </ng-container> -->
+<section class="blog">
+            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" fxLayoutGap="50px" *ngFor="let post of posts">
+				
+				<div class="info">
+					<h1><a href="/getpost/{{post.id}}" class="blog-title">{{post.title}}</a></h1>
+					<i class="fa fa-user"><span> Author : {{post.username}}</span></i> 
+				</div>																						
+				<div class="content">
+					 <span class="quote">"</span><span [innerHTML]="post.content"></span>
+					<a mat-button href="/getpost/{{post.id}}" class="read-more">Read More</a>
+				</div>																						
+																										
+			
+			</div>
+</section>

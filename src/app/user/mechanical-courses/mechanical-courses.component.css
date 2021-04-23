@@ -5,7 +5,7 @@
 
 .btn-center {
 	display: grid;
-	justify-content: center;
+	margin: 40px auto;
 }
 
 .img-width {
@@ -19,13 +19,24 @@
 	display: flex;
 }
 
+.mat-card-header {
+	margin-top: 50px;
+}
+
 .plan-price li {
 	list-style-type: none;
 	float: left;
 	width: 43%;
+	margin-bottom: 10px;
 }
 .plan-price li:nth-child(1) {
 	border-right: solid 1px #000000;
+}
+.middle-button {
+	margin-top: 10px;
+}
+.mat-divider {
+	margin-top: 25px;
 }
 
 
