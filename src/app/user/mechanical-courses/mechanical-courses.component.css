@@ -1,0 +1,47 @@
+.main-form form {
+	text-align: center;
+	display: grid !important;
+}
+
+.btn-center {
+	display: grid;
+	justify-content: center;
+}
+
+.img-width {
+	height: 100px;
+	margin: 0 auto;
+	display: flex
+}
+
+.mat-headline {
+	justify-content: center;
+	display: flex;
+}
+
+.plan-price li {
+	list-style-type: none;
+	float: left;
+	width: 43%;
+}
+.plan-price li:nth-child(1) {
+	border-right: solid 1px #000000;
+}
+
+
+
+
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+   color: #129fb8;
+}
+
+/* focused color */
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+   color: #129fb8;
+}
+
+/* floating label color */
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label { 
+   color: #129fb8;
+}

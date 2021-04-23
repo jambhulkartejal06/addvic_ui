@@ -147,7 +147,7 @@
 
 
 
-<div class="footer footer-bg">
+<div class="main-form">
             <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
 				<div>
 					                <form class="example-form" #trainingForm="ngForm">
@@ -155,7 +155,7 @@
                                 <tr>
                                     <td>
                                         <mat-form-field appearance="outline">
-                                            <input matInput [(ngModel)]="trainingObj.fullName" name="fullName" placeholder="Enter FullName" required fxFlex>
+                                            <input matInput [(ngModel)]="trainingObj.fullName" name="fullName" placeholder="Enter Full Name" required fxFlex>
                                         </mat-form-field>
                                     </td>
                                 </tr>
@@ -203,11 +203,7 @@
                                        
 <!-- old code -->
             
-                                        
-
-                                    <mat-card-actions>
-                                        <button mat-flat-button (click)="send(trainingForm)" color="primary" type="submit">Request for a call back</button>
-                                    </mat-card-actions>
+                                    
                           </form>  
 					
 					
@@ -215,8 +211,8 @@
 			</div>
 	
 	
-	<div *ngFor="let selectedCategory of selectedCategories; let i =index">
-                                     <h4 class="cat-heading">{{selectedCategory.category}}</h4>
+	<div *ngFor="let selectedCategory of selectedCategories; let i =index" style="padding: 0px 10px">
+                                     <mat-h1 class="mat-headline">{{selectedCategory.category}}</mat-h1>
                                      <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10">
                                         <mat-card *ngFor="let course of dropdowncat[i]" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
 
@@ -228,16 +224,16 @@
                                       <img [src]="course['encodedStringImage']" class="img-width" alt="">
                                       </div>
                                        <mat-card-content style="text-align: center !important;">
-                                        <span>{{course.courseName}}</span>
+                                        <span><h2>{{course.courseName}}</h2></span>
                                         
                                                    
                                                   
 
                                                    
-                                                    <ul class="middle-header">
-                                                        <li><h3>Basic Plan</h3><mat-card-subtitle>{{course.basicPlan}}</mat-card-subtitle></li>
+                                                    <ul class="plan-price">
+                                                        <li><p>Basic Plan</p><mat-card-subtitle>{{course.basicPlan}}</mat-card-subtitle></li>
                                                         <li>
-                                                            <h3>Premium Plan</h3>
+                                                            <p>Premium Plan</p>
                                                     <mat-card-subtitle>{{course.premiumPlan}}</mat-card-subtitle>
                                                         </li>
                                                     </ul>
@@ -254,7 +250,7 @@
 
                                         </div>
 		
-		<button mat-flat-button (click)="send(trainingForm)" color="primary" type="submit">Request for a call back</button>
+		<button mat-flat-button (click)="send(trainingForm)" color="primary" type="submit" class="btn-center">Request for a call back</button>
                                         <mat-divider class="divider">
                                             </mat-divider>
                                        </div>
