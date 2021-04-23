@@ -1,328 +1,47 @@
-.example-card {
-justify-content: center;
-margin: 0 auto !important;
-    
-} 
-.mat-card-display{
-display: flex !important;
-}
-.card-display{
-    margin-right: 15px;
+.main-form form {
+	text-align: center;
+	display: grid !important;
 }
 
-.example-form {
-    width: 100%; 
+.btn-center {
+	display: grid;
+	justify-content: center;
 }
 
-mat-card-title {
-     display: flex; 
-     justify-content: center; 
-    font-family: Poppins;
-    color:#263238
+.img-width {
+	height: 100px;
+	margin: 0 auto;
+	display: flex
 }
 
-.text{
-    text-align:center '!important';
-    margin: 0 auto '!important';
-    display:inline;
-    font-family: Poppins;
-    color:#263238
+.mat-headline {
+	justify-content: center;
+	display: flex;
 }
-.example-full-width{
-    font-family: Poppins;
-    color:#263238
-}
-mat-card-actions{
-    padding: 32px 0;
-    margin: 0 auto;
-}
-.material-icons {
-    list-style: none;
-    float: right;
-    padding-right: 20px;
-    vertical-align: top;
-    margin-top: 0px;
-}
-.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-    background-color: #3f51b5;
-    padding: 0px 10px;
 
+.plan-price li {
+	list-style-type: none;
+	float: left;
+	width: 43%;
+}
+.plan-price li:nth-child(1) {
+	border-right: solid 1px #000000;
 }
 
 
-/* .example-headers-align .mat-expansion-panel-header-title,
-.example-headers-align .mat-expansion-panel-header-description {
-  flex-basis: 0;
+
+
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+   color: #129fb8;
 }
 
-.example-headers-align .mat-expansion-panel-header-description {
-  justify-content: space-between;
-  align-items: center;
-} */
-.space{
-    /* padding:20px; */
-}
-tr{
-/* border: 1px solid #dddddd;
-  text-align: left;
-  padding: 20px; */
+/* focused color */
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+   color: #129fb8;
 }
 
-.mat-expansion-panel{
-    width: 120%;
-    margin: 4px;
-    overflow-x: auto;
+/* floating label color */
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label { 
+   color: #129fb8;
 }
-.mat-expansion-panel-content {
-    display: flex;
-    flex-direction: column;
-    overflow-x: auto; 
-}
-@media only screen and (max-width: 750px){
-.mat-form-field {
-    width: 160% !important;
-   
-}
-}
-
-@media only screen and (max-width: 490px){
-    .mat-form-field {
-        width: 100% !important;
-       
-    }
-    }
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-.clear {
-    clear: both;
-}
-
-.row {
-    width: 100%;
-}
-
- .container {
-    width: 80%;
-    margin: 0 auto;
-} 
-
- .border {
-     border: solid 2px #eeeeee; 
-     border-radius: 2px; 
-    padding: 5px; 
-     margin-top: 50px; 
- }  
-
-.heading {
-    text-align: center;
-    border-bottom: solid 2px #000000;
-    line-height: 40px;
-    background-color: #7ed85b;
-    color: #f6f6f6;
-}
-
-.basic {
-    float: left;
-    width: 45%;
-    padding: 10px;
-    border: solid 2px #eeeeee;
-    border-radius: 3px;
-}
-
-.basic li {
-    list-style-image: url(../../../assets/right-tick.svg);
-    font-size: 40px;
-    margin-left: 30px;
-    line-height: 35px;
-    border-bottom: solid 2px #eeeeee;
-}
-
-.premium {
-    width: 45%;
-    float: right;
-    padding: 10px;
-    border: solid 2px #eeeeee;
-    border-radius: 3px;
-}
-
-.premium li {
-    list-style-image: url(../../../assets/right-tick.svg);
-    font-size: 40px;
-    margin-left: 30px;
-    line-height: 35px;
-    border-bottom: solid 2px #eeeeee;
-}
-.wrong {
-    list-style-image: url(../../../assets/wrong.svg) !important;
-}
-
-.basic li p {
-    font-size: 17px;
-}
-
-.premium li p {
-    font-size: 17px;
-}
-
-@media screen and (max-width: 700px) {
-    .container {
-        width: 95%;
-    }
-
-    .basic li p {
-        font-size: 16px;
-    }
-
-    .premium li p {
-        font-size: 16px;
-    }
-
-    .basic li {
-        font-size: 30px;
-        line-height: 30px;
-    }
-
-    .premium li {
-        font-size: 30px;
-        line-height: 30px;
-    }
-
-    .basic {
-        width: 44%;
-        padding: 5px;
-    }
-
-    .premium {
-        width: 44%;
-        padding: 5px;
-    }
-    
-}
-
-.mat-h3, .mat-subheading-2, .mat-typography h3 {
-    font: 400 16px/28px Roboto, "Helvetica Neue", sans-serif;
-    letter-spacing: normal;
-    margin: 0 0 16px;
-    padding: 12px 0px 0px 0px !important;
-    font-size: 22px;
-}
- .fa{
-     cursor: pointer;
- }
- i.hover{
-    cursor: pointer; 
- }
-.check{
-    /* width: 150px !important; */
-    word-wrap: break-word;
-    /* border-bottom: solid 1px #000000; */
-}
-/* tr {
-    border: none !important;
-    border-bottom: 1px solid #000000;
-    display: flex;
-} */
-.ellipses{
-    /* word-break: break-word; */
- display:block;
- white-space: nowrap; 
- width: 100px; 
- overflow: hidden;
- text-overflow: ellipsis; 
-
-  
-}
-
-.ellipses:hover {
-   /* display: block; */
-   /* overflow-wrap: break-word; */
-    overflow: visible;
-}
-#matTooltip{
-    font-size: 20px !important;
-  }
-.img-width{
-    width: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.content-align{
-    text-align: center;
-}
-.middle-header{
-    margin: auto;
-}
-.middle-header li{
-    float: left;
-    width: 48%;
-    margin: 10px auto;
-    list-style-type: none;
-    text-align: center;
-    border-right: solid 1px #000000;
-}
-.middle-header li:nth-child(2){
-    clear: right;
-    border-right: none !important;
-
-}
-.clear{
-    clear: both;
-}
-.middle-button{
-    margin: auto;
-    text-align: center;
-}
-mat-card {
-    margin-bottom: 10px;
-  }
-  
-  .mr-10 {
-    margin-right: 10px;
-  }
-  
-  .ml-10 {
-    margin-left: 10px;
-  }
-  .divider{ 
-  
-  margin: 10px 0px;
-  border-top-width: 2px;
-  border-top-style: solid;
-  border-top-color: #000000;
-  
-  }
-  .cat-heading{
-      margin: 28px 0px 16px !important;
-  }
-
-  .mat-form-field{
-    width: 255%;
- }
-  
- 
- 
- /* default and hover color */
- ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-    color: #129fb8;
- }
- 
- /* focused color */
- ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
-    color: #129fb8;
- }
- 
- /* floating label color */
- ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-label { 
-    color: #129fb8;
- }
- button{
-    background-color: #129fb8;
-    color:white;
-    padding-left: 20px;
-    padding-right: 20px;
- }
- 
