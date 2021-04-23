@@ -13,7 +13,9 @@ import { Meta, Title } from '@angular/platform-browser';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent implements OnInit {
-  
+  responsive = true;
+  cols = 1;
+  current = 0;
   title='Contact Us';
 public contactForm: NgForm;
 conObj=new ContactUs();
@@ -21,9 +23,7 @@ conObj=new ContactUs();
   location = {
   phoneNumber: 18002671818,
   }
-  responsive = true;
-  cols = 1;
-  current = 0;
+  
   constructor( private contactusService: ContactUsService,private toastr: ToastrService,private titleService: Title,
     private metaTagService: Meta) { }
 
