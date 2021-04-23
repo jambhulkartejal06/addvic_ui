@@ -94,12 +94,10 @@
    
 
 
-     <div class="row-2">
-        <div class="container">
-            <mat-grid-list rowHeight="1:0.6"
-            [responsive]="responsive"
-            (responsiveColsChange)="cols = $event">
-            <mat-grid-tile>
+     <section>
+        <div class="footer footer-bg">
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
+                <div>
                 
                 <ul>
                     <li><b>Important Links :</b></li>
@@ -110,10 +108,9 @@
                     <li><a routerLink="/feedback">Feedback Form</a></li>
                     <li><a routerLink="/student/login">Login</a></li>
                 </ul>
-            </mat-grid-tile>
-           
-            <mat-grid-tile>
-                <ul>
+                    </div>
+                    <div>
+                    <ul>
                     <li><b>Our Other Accounts Here :</b></li>
                     <li><a href="https://www.instagram.com/addvic_technology/">
                         <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
@@ -131,42 +128,37 @@
                         <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
                         Whatsapp</a></li>
                 </ul>
-            </mat-grid-tile>
-        
-            <mat-grid-tile>
-                <ul>
+                    </div>
+                    <div>
+                    <ul>
                     <li><b>Our Privacy Policy is Here :</b></li>
                     <li><a routerLink="/privacy">Privacy Policy</a></li><br>
                     <li><b>About Our Terms & Conditions :</b></li>
                     <li><a routerLink="/termsAndCondition">Terms & Conditions</a></li><br>
-                    <li><a routerLink="/create/form" style="color: #e2b84f;">We are Hiring !</a></li>
+                    <li><a routerLink="/hiring" style="color: #e2b84f;">We are Hiring !</a></li>
                     </ul>
-            </mat-grid-tile>
-            <mat-grid-tile>
-           
-                <ul>
+                    </div>
+                    <div>
+                    <ul>
                     <li><b>Phone :</b></li>
                     <li><a href="tel:18002671818">18002671818</a></li>
                     <li><b>Email :</b></li>
                     <li><a href="mailto:info@addvic.com">info@addvic.com</a></li>
                     <li><b>Address :</b></li>
-                    <li>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
-                        Anand Nagar, <br> Pune - 411051</li>
+						<li><address>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
+                        Anand Nagar, <br> Pune - 411051</address></li>
                     </ul>
-        
-               </mat-grid-tile>
-        
-            </mat-grid-list>
-            </div>
-        </div>
-        <div class="clear"></div>
-        <div class="row-3">
+                    </div>
+                    </div>
+                    </div>
+	
+	<div class="footer-last">
             CIN No.: U72900PN2020OPC194352
             </div>
-            <div class="row-3">
+            <div class="footer-last">
                 GST No.: 27AAUCA0988N1ZQ
                 </div>
-        <div class="row-3">
-        All Rights Reserved @ <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
+	<div class="footer-last" style="padding-bottom: 30px">
+        All Rights Reserved &copy; <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
         </div>
-        
+        </section>
