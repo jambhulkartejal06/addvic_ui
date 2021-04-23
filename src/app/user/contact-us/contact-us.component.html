@@ -2,14 +2,11 @@
     <img src="../../../assets/contact_us.svg" alt="image" class="image-size">
      </div>
      <div class="clear"></div>                              
-     <div class="container">
-         <div class="box1">
-     <h3>CONTACT US</h3>
-     <p>
-         Please fill out form, and we'll get in touch shortly.
-     </p>
-     <div class="form-center">
-     <form class="example-form" #contactForm="ngForm">
+ <section>
+        <div class="contact contact-form">
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
+				<div class="box-1">
+				<form class="example-form" #contactForm="ngForm">
          <table>
                      <tr>
                          <td>
@@ -49,21 +46,20 @@
                              <button mat-flat-button (click)="send(contactForm)"  type="submit">Send</button>
                          </mat-card-actions>
                             </form>
-                         </div>
-         </div>
-         <div class="box2">
-     <h4>OTHER WAYS TO CONNECT...</h4>
-     <section>
+					</div>
+				<div class="box-2">
+				
+					<h4>OTHER WAYS TO CONNECT...</h4>
+
         
             
              <p> <b>Phone:</b> 
             <a class="phone-color" [href]="'tel:'+location.phoneNumber">{{location.phoneNumber | phoneFilter}}</a><br>
-            <!-- <a [href]="'tel:'+ location.phoneNumber">{{location.phoneNumber | phoneFilter}}</a> -->
-             </p>
-             <p> <b>Email:</b> info@addvic.com </p>  
-             <p> <b>Address:</b> <br>
-                 Chanakya Nagari, Flat no. 307, 3rd Floor, Sinhgad Rd, 
-                 above Dr. Dudhbhate Netralaya, Anand Nagar, Pune, Maharashtra 411051</p>
+            <!-- <a [href]="'tel:'+ location.phoneNumber">{{location.phoneNumber | phoneFilter}}</a> --> 
+            </p>
+             <p> <b>Email:</b> info@addvic.com </p> 
+                 <address style="padding-bottom: 10px"><b>Address:</b><br>Chanakya Nagari, Flat no. 307, 3rd Floor,<br>Sinhgad Rd, 
+                 above Dr. Dudhbhate Netralaya,<br>Anand Nagar, Pune, Maharashtra 411051</address>
              <p>
                  <b>Our Social Media Links: </b>
                  
@@ -86,15 +82,15 @@
                         <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
                       </a>
              </div>  
-     </section>
-         </div>
-         <div class="clear"></div>     
-     </div>
 
-   
+				</div>
+			</div>
+	</div>
+
+</section>
 
 
-     <section>
+<section>
         <div class="footer footer-bg">
             <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
                 <div>
@@ -162,3 +158,4 @@
         All Rights Reserved &copy; <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
         </div>
         </section>
+        
