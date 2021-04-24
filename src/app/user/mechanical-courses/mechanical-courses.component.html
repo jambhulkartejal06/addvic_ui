@@ -1,5 +1,3 @@
-
-
 <div class="container">
     <div class="sliders">
         <mat-carousel
@@ -36,19 +34,22 @@
 </div> 
 
 
-    <mat-card class="example-card"> 
-    <mat-card-header class="text">
-    
-<mat-card-title>Drop your contact details so we can contact you later</mat-card-title>
-<mat-divider></mat-divider>
-       </mat-card-header>
-            <mat-card-content>
-                <form class="example-form" #trainingForm="ngForm">
+
+<div class="main-form">
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
+				<div>
+					                <form class="example-form" #trainingForm="ngForm">
+										
                     <table>
+						<tr>
+							<td>
+								<h6 class="form-heading">Drop your contact details so we can contact you later</h6>
+							</td>
+						</tr>
                                 <tr>
                                     <td>
                                         <mat-form-field appearance="outline">
-                                            <input matInput [(ngModel)]="trainingObj.fullName" name="fullName" placeholder="Enter FullName" required fxFlex>
+                                            <input matInput [(ngModel)]="trainingObj.fullName" name="fullName" placeholder="Enter Full Name" required fxFlex>
                                         </mat-form-field>
                                     </td>
                                 </tr>
@@ -66,7 +67,7 @@
                                         </mat-form-field>
                                     </td>
                                 </tr>
-                                <small>To preview the course details kindly select category list.</small>
+                                <small>To preview the course details kindly select category.</small>
                                 <tr>
                                     <td>
                                         <mat-form-field appearance="outline">
@@ -81,8 +82,31 @@
                                 </tr> 
 
                                     </table>
-                                    <div *ngFor="let selectedCategory of selectedCategories; let i =index">
-                                     <h4 class="cat-heading">{{selectedCategory.category}}</h4>
+                                    
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+                                       
+                                       
+<!-- old code -->
+            
+                                    
+                          </form>  
+					
+					
+				</div>
+			</div>
+	
+	
+	<div *ngFor="let selectedCategory of selectedCategories; let i =index" style="padding: 0px 10px">
+                                     <h1 class="mat-headline">{{selectedCategory.category}}</h1>
                                      <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10">
                                         <mat-card *ngFor="let course of dropdowncat[i]" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
 
@@ -91,19 +115,19 @@
                                         
                                        </mat-card-header>
                                       <div>
-                                      <img [src]="course['encodedStringImage']" class="img-width">
+                                      <img [src]="course['encodedStringImage']" class="img-width" alt="">
                                       </div>
                                        <mat-card-content style="text-align: center !important;">
-                                        <span>{{course.courseName}}</span>
+                                        <span><h2>{{course.courseName}}</h2></span>
                                         
                                                    
                                                   
 
                                                    
-                                                    <ul class="middle-header">
-                                                        <li><h3>Basic Plan</h3><mat-card-subtitle>{{course.basicPlan}}</mat-card-subtitle></li>
+                                                    <ul class="plan-price">
+                                                        <li><p>Basic Plan</p><mat-card-subtitle>{{course.basicPlan}}</mat-card-subtitle></li>
                                                         <li>
-                                                            <h3>Premium Plan</h3>
+                                                            <p>Premium Plan</p>
                                                     <mat-card-subtitle>{{course.premiumPlan}}</mat-card-subtitle>
                                                         </li>
                                                     </ul>
@@ -111,34 +135,37 @@
                                                 
                                                     <mat-card-subtitle class="middle-button"><button mat-flat-button aria-hidden="true" (click)="showPdfDownload(course)" color="primary" type="button">Download Syllabus</button></mat-card-subtitle>
                                                       
+										   
+										   
                                        </mat-card-content>
+											
                                         </mat-card>
+										 
 
                                         </div>
+		
+		
                                         <mat-divider class="divider">
                                             </mat-divider>
+		
+		
                                        </div>
-                                       
-                                       
-<!-- old code -->
-            
-                                        
 
-                                    <mat-card-actions>
-                                        <button mat-flat-button (click)="send(trainingForm)" color="primary" type="submit">Request for a call back</button>
-                                    </mat-card-actions>
-                          </form>             
-                                          </mat-card-content>
-                                           </mat-card> 
-
-                                           
-                                          <div class="row">
-                                            <div class="container border">
-                                                <div class="basic">
-                                                    <div class="heading">
-                                                        <h3 class="mat-h3">Basic Plan</h3>
-                                                    </div>
-                                                    <ul>
+	
+	<button mat-flat-button (click)="send(trainingForm)" color="primary" type="submit" class="btn-center">Request for a call back</button>
+	
+	
+	
+	
+	
+	
+	<div class="plan-des">
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+				<div class="box-1">
+					<div class="heading">
+						 <h6 class="heading-h6">Basic Plan</h6>
+                    </div>
+					<ul>
                                                         <li><p>Daily Live Lecture with Recording &nbsp;<i #tooltip="matTooltip"
                                                             matTooltip="Daily Live lectures will be conducted and its recording will be provided as well." matTooltipClass="multiline-tooltip"
                                                             matTooltipPosition="right"
@@ -203,13 +230,13 @@
                                                             matTooltip="Apart from daily doubts sessions, you can resolve your queries and Technical doubts through our Email, Whatsapp and Telephone support facility." matTooltipClass="multiline-tooltip"
                                                             matTooltipPosition="right"
                                                             aria-tooltip="Button that displays and hides a tooltip triggered by other buttons" class="fa fa-info-circle"></i></p></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="premium">
-                                                    <div class="heading">
-                                                        <h3 class="mat-h3">Premium Plan</h3>
-                                                    </div>
-                                                    <ul>
+					</ul>
+				</div>
+				<div class="box-2">
+					<div class="heading">
+						 <h6 class="heading-h6">Premium Plan</h6>
+                    </div>
+					<ul>
                                                         <li><p>Daily Live Lecture with Recording &nbsp;<i #tooltip="matTooltip"
                                                             matTooltip="Daily Live lectures will be conducted and its recording will be provided as well." matTooltipClass="multiline-tooltip"
                                                             matTooltipPosition="right"
@@ -274,28 +301,84 @@
                                                             matTooltip="Apart from daily doubts sessions, you can resolve your queries and Technical doubts through our Email, Whatsapp and Telephone support facility." matTooltipClass="multiline-tooltip"
                                                             matTooltipPosition="right"
                                                             aria-tooltip="Button that displays and hides a tooltip triggered by other buttons" class="fa fa-info-circle"></i></p></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="clear"></div>
-                                            </div>
-                                        </div>
-                                       
-                                          <!-- <a [href]="fileUrl" download="file.txt">DownloadFile</a> -->
-                                          <!-- <button mat-raised-button (click)="openDialog()">Pick one</button> -->
-
-                                          <!-- New mat card code -->
-<!-- <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutAlign="space-around center" fxLayoutGap="25px">
-    <mat-card *ngFor="let course of dropdowncat" fxFlex="calc(33%-25px)" fxFlex.sm="calc(50%-25px)" >
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{course.title}}</mat-card-title>
-        <mat-card-subtitle>{{course.subtitle}}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image [src]="course.url" alt="Photo of {{course.title}}">
-      <mat-card-content>
-        <p>
-          {{course.content}}
-        </p>
-      </mat-card-content>
-    </mat-card>
-  </div> -->
+					</ul>
+				</div>
+				
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	<section>
+        <div class="footer footer-bg">
+            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
+                <div>
+                
+                <ul>
+                    <li><b>Important Links :</b></li>
+                    <li><a routerLink="/home">Home</a></li>
+                    <li><a routerLink="/about">About Us</a></li>
+                    <li><a routerLink="/certificate/certificateNumber">Certificate Verification</a></li>
+                    <li><a routerLink="/create/feedback">Contact Us</a></li>
+                    <li><a routerLink="/feedback">Feedback Form</a></li>
+                    <li><a routerLink="/student/login">Login</a></li>
+                </ul>
+                    </div>
+                    <div>
+                    <ul>
+                    <li><b>Our Other Accounts Here :</b></li>
+                    <li><a href="https://www.instagram.com/addvic_technology/">
+                        <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
+                        Instagram</a></li>
+                    <li><a href="https://www.facebook.com/addvictechnology">
+                        <i class="fa fa-facebook-f fa-fw" style="font-size:24px"></i>
+                        Facebook</a></li>
+                    <li><a href="https://www.linkedin.com/company/addvic">
+                        <i class="fa fa-linkedin fa-fw" style="font-size:24px"></i>
+                        Linkedin</a></li>
+                    <li><a href="https://www.youtube.com/">
+                        <i class="fa fa-youtube fa-fw" style="font-size:24px"></i>
+                        Youtube</a></li>
+                    <li><a href="https://wa.me/message/MN4AEW3ISURRK1">
+                        <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
+                        Whatsapp</a></li>
+                </ul>
+                    </div>
+                    <div>
+                    <ul>
+                    <li><b>Our Privacy Policy is Here :</b></li>
+                    <li><a routerLink="/privacy">Privacy Policy</a></li><br>
+                    <li><b>About Our Terms & Conditions :</b></li>
+                    <li><a routerLink="/termsAndCondition">Terms & Conditions</a></li><br>
+                    <li><a routerLink="/hiring" style="color: #e2b84f;">We are Hiring !</a></li>
+                    </ul>
+                    </div>
+                    <div>
+                    <ul>
+                    <li><b>Phone :</b></li>
+                    <li><a href="tel:18002671818">18002671818</a></li>
+                    <li><b>Email :</b></li>
+                    <li><a href="mailto:info@addvic.com">info@addvic.com</a></li>
+                    <li><b>Address :</b></li>
+						<li><address>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
+                        Anand Nagar, <br> Pune - 411051</address></li>
+                    </ul>
+                    </div>
+                    </div>
+                    </div>
+	
+	<div class="footer-last">
+            CIN No.: U72900PN2020OPC194352
+            </div>
+            <div class="footer-last">
+                GST No.: 27AAUCA0988N1ZQ
+                </div>
+	<div class="footer-last" style="padding-bottom: 30px">
+        All Rights Reserved &copy; <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
+        </div>
+        </section>
+				
+				

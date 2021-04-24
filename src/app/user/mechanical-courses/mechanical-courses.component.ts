@@ -19,7 +19,9 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
   styleUrls: ['./mechanical-courses.component.css']
 })
 export class MechanicalCoursesComponent implements OnInit {
-
+  responsive = true;
+  cols = 1;
+   current = 0;
 
   title='Mechanical Design Courses';
   imageToShow: any;
