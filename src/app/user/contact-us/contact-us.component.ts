@@ -22,7 +22,6 @@ conObj=new ContactUs();
   }
   responsive = true;
   cols = 1;
-  current = 0
   constructor( private contactusService: ContactUsService,private toastr: ToastrService,private titleService: Title,
     private metaTagService: Meta) { }
 

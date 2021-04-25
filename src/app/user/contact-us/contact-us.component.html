@@ -2,11 +2,14 @@
     <img src="../../../assets/contact_us.svg" alt="image" class="image-size">
      </div>
      <div class="clear"></div>                              
- <section>
-        <div class="contact contact-form">
-            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
-				<div class="box-1">
-				<form class="example-form" #contactForm="ngForm">
+     <div class="container">
+         <div class="box1">
+     <h3>CONTACT US</h3>
+     <p>
+         Please fill out form, and we'll get in touch shortly.
+     </p>
+     <div class="form-center">
+     <form class="example-form" #contactForm="ngForm">
          <table>
                      <tr>
                          <td>
@@ -46,20 +49,21 @@
                              <button mat-flat-button (click)="send(contactForm)"  type="submit">Send</button>
                          </mat-card-actions>
                             </form>
-					</div>
-				<div class="box-2">
-				
-					<h4>OTHER WAYS TO CONNECT...</h4>
-
+                         </div>
+         </div>
+         <div class="box2">
+     <h4>OTHER WAYS TO CONNECT...</h4>
+     <section>
         
             
              <p> <b>Phone:</b> 
             <a class="phone-color" [href]="'tel:'+location.phoneNumber">{{location.phoneNumber | phoneFilter}}</a><br>
-            <!-- <a [href]="'tel:'+ location.phoneNumber">{{location.phoneNumber | phoneFilter}}</a> --> 
-            </p>
-             <p> <b>Email:</b> info@addvic.com </p> 
-                 <address style="padding-bottom: 10px"><b>Address:</b><br>Chanakya Nagari, Flat no. 307, 3rd Floor,<br>Sinhgad Rd, 
-                 above Dr. Dudhbhate Netralaya,<br>Anand Nagar, Pune, Maharashtra 411051</address>
+            <!-- <a [href]="'tel:'+ location.phoneNumber">{{location.phoneNumber | phoneFilter}}</a> -->
+             </p>
+             <p> <b>Email:</b> info@addvic.com </p>  
+             <p> <b>Address:</b> <br>
+                 Chanakya Nagari, Flat no. 307, 3rd Floor, Sinhgad Rd, 
+                 above Dr. Dudhbhate Netralaya, Anand Nagar, Pune, Maharashtra 411051</p>
              <p>
                  <b>Our Social Media Links: </b>
                  
@@ -82,18 +86,20 @@
                         <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
                       </a>
              </div>  
+     </section>
+         </div>
+         <div class="clear"></div>     
+     </div>
 
-				</div>
-			</div>
-	</div>
-
-</section>
+   
 
 
-<section>
-        <div class="footer footer-bg">
-            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
-                <div>
+     <div class="row-2">
+        <div class="container">
+            <mat-grid-list rowHeight="1:0.6"
+            [responsive]="responsive"
+            (responsiveColsChange)="cols = $event">
+            <mat-grid-tile>
                 
                 <ul>
                     <li><b>Important Links :</b></li>
@@ -104,9 +110,10 @@
                     <li><a routerLink="/feedback">Feedback Form</a></li>
                     <li><a routerLink="/student/login">Login</a></li>
                 </ul>
-                    </div>
-                    <div>
-                    <ul>
+            </mat-grid-tile>
+           
+            <mat-grid-tile>
+                <ul>
                     <li><b>Our Other Accounts Here :</b></li>
                     <li><a href="https://www.instagram.com/addvic_technology/">
                         <i class="fa fa-instagram fa-fw" style="font-size:24px"></i>
@@ -124,38 +131,42 @@
                         <i class="fa fa-whatsapp fa-fw" style="font-size:24px"></i>
                         Whatsapp</a></li>
                 </ul>
-                    </div>
-                    <div>
-                    <ul>
+            </mat-grid-tile>
+        
+            <mat-grid-tile>
+                <ul>
                     <li><b>Our Privacy Policy is Here :</b></li>
                     <li><a routerLink="/privacy">Privacy Policy</a></li><br>
                     <li><b>About Our Terms & Conditions :</b></li>
                     <li><a routerLink="/termsAndCondition">Terms & Conditions</a></li><br>
-                    <li><a routerLink="/hiring" style="color: #e2b84f;">We are Hiring !</a></li>
+                    <li><a routerLink="/create/form" style="color: #e2b84f;">We are Hiring !</a></li>
                     </ul>
-                    </div>
-                    <div>
-                    <ul>
+            </mat-grid-tile>
+            <mat-grid-tile>
+           
+                <ul>
                     <li><b>Phone :</b></li>
                     <li><a href="tel:18002671818">18002671818</a></li>
                     <li><b>Email :</b></li>
                     <li><a href="mailto:info@addvic.com">info@addvic.com</a></li>
                     <li><b>Address :</b></li>
-						<li><address>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
-                        Anand Nagar, <br> Pune - 411051</address></li>
+                    <li>Chanakya Nagari, 3rd Floor, <br> Sinhgad Rd, 
+                        Anand Nagar, <br> Pune - 411051</li>
                     </ul>
-                    </div>
-                    </div>
-                    </div>
-	
-	<div class="footer-last">
+        
+               </mat-grid-tile>
+        
+            </mat-grid-list>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="row-3">
             CIN No.: U72900PN2020OPC194352
             </div>
-            <div class="footer-last">
+            <div class="row-3">
                 GST No.: 27AAUCA0988N1ZQ
                 </div>
-	<div class="footer-last" style="padding-bottom: 30px">
-        All Rights Reserved &copy; <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
+        <div class="row-3">
+        All Rights Reserved @ <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
         </div>
-        </section>
         

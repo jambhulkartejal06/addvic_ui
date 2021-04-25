@@ -36,7 +36,7 @@
 </div> 
 
 
- <!--   <mat-card class="example-card"> 
+    <mat-card class="example-card"> 
     <mat-card-header class="text">
     
 <mat-card-title>Drop your contact details so we can contact you later</mat-card-title>
@@ -118,19 +118,9 @@
                                         <mat-divider class="divider">
                                             </mat-divider>
                                        </div>
-					
-					
-					
-					
-					
-					
-				
-					
-					
-					
                                        
                                        
-
+<!-- old code -->
             
                                         
 
@@ -141,132 +131,6 @@
                                           </mat-card-content>
                                            </mat-card> 
 
-
--->	
-
-
-
-
-<div class="main-form">
-            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center top" fxLayoutGap="50px">
-				<div>
-					                <form class="example-form" #trainingForm="ngForm">
-                    <table>
-                                <tr>
-                                    <td>
-                                        <mat-form-field appearance="outline">
-                                            <input matInput [(ngModel)]="trainingObj.fullName" name="fullName" placeholder="Enter Full Name" required fxFlex>
-                                        </mat-form-field>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <mat-form-field appearance="outline">
-                                            <input matInput [(ngModel)]="trainingObj.email" placeholder="Enter Email" name="email" required fxFlex>
-                                        </mat-form-field>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <mat-form-field appearance="outline">
-                                            <input matInput [(ngModel)]="trainingObj.mobile" placeholder="Enter Mobile No." name="mobile" required fxFlex>
-                                        </mat-form-field>
-                                    </td>
-                                </tr>
-                                <small>To preview the course details kindly select category list.</small>
-                                <tr>
-                                    <td>
-                                        <mat-form-field appearance="outline">
-                                            <mat-label>Category List</mat-label>
-                                         <mat-select [formControl]="categoryList" multiple>
-                                                <mat-option *ngFor="let cat of categories" (click)="selectCategory(cat)" [value]="cat.category">
-                                                    {{cat.category}}
-                                                </mat-option>
-                                            </mat-select>
-                                        </mat-form-field>
-                                    </td>
-                                </tr> 
-
-                                    </table>
-                                    
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-                                       
-                                       
-<!-- old code -->
-            
-                                    
-                          </form>  
-					
-					
-				</div>
-			</div>
-	
-	
-	<div *ngFor="let selectedCategory of selectedCategories; let i =index" style="padding: 0px 10px">
-                                     <mat-h1 class="mat-headline">{{selectedCategory.category}}</mat-h1>
-                                     <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="10px" ngClass.gt-xs="ml-10">
-                                        <mat-card *ngFor="let course of dropdowncat[i]" fxFlex.sm="0 1 calc(50%-10px)" fxFlex.md="0 1 calc(33%-10px)" fxFlex.gt-md="0 1 calc(25%-10px)">
-
-                                       <mat-card-header>
-                                        <mat-checkbox value="{{course.courseName}}" (click)="selectCourse(course)" [checked]="false"></mat-checkbox>
-                                        
-                                       </mat-card-header>
-                                      <div>
-                                      <img [src]="course['encodedStringImage']" class="img-width" alt="">
-                                      </div>
-                                       <mat-card-content style="text-align: center !important;">
-                                        <span><h2>{{course.courseName}}</h2></span>
-                                        
-                                                   
-                                                  
-
-                                                   
-                                                    <ul class="plan-price">
-                                                        <li><p>Basic Plan</p><mat-card-subtitle>{{course.basicPlan}}</mat-card-subtitle></li>
-                                                        <li>
-                                                            <p>Premium Plan</p>
-                                                    <mat-card-subtitle>{{course.premiumPlan}}</mat-card-subtitle>
-                                                        </li>
-                                                    </ul>
-                                                   <div class="clear"></div>
-                                                
-                                                    <mat-card-subtitle class="middle-button"><button mat-flat-button aria-hidden="true" (click)="showPdfDownload(course)" color="primary" type="button">Download Syllabus</button></mat-card-subtitle>
-                                                      
-										   
-										   
-                                       </mat-card-content>
-											
-                                        </mat-card>
-										 
-
-                                        </div>
-		
-		<button mat-flat-button (click)="send(trainingForm)" color="primary" type="submit" class="btn-center">Request for a call back</button>
-                                        <mat-divider class="divider">
-                                            </mat-divider>
-                                       </div>
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
                                            
                                           <div class="row">
                                             <div class="container border">

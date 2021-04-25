@@ -46,9 +46,6 @@ export class MechanicalCoursesComponent implements OnInit {
   courseImage:File;
   encodedStringImage;
   img: any;
-  responsive = true;
-  cols = 5;
-  current = 5;
   
 
   slides = [{'image':'../assets/course-1.svg'}, {'image': '../assets/course-2.svg'},{'image': '../assets/course-3.svg'}, {'image': '../assets/course-4.svg'}];
