@@ -16,6 +16,7 @@ export class CertificateVerificationComponent implements OnInit {
   title='Verify Certificate | Certificate Verification';
   responsive = true;
   cols = 1;
+  current = 0;
   
   centerObj = new AdminCertificate();
   user = new Array(new AdminCertificate());

@@ -28,7 +28,7 @@ mat-sidenav {
   color: #be4e64;
 }
 
-.top-container{
+.top-container {
  text-align: right;
   flex: 1 1 auto;
 }
@@ -39,8 +39,9 @@ a,button,h2{
 .top-container a:hover {
   color: #be4e64;
 }
-.top-container a{
+.top-container a {
   color: #263238;
+	text-decoration: none;
 }
 .dropdown-btn button {
   color: #263238 !important;
@@ -91,3 +92,4 @@ color: #129fb8;
 button.active{
   color: #129fb8;
 }
+

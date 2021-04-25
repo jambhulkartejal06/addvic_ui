@@ -110,3 +110,43 @@
         width: 100%;
         width: 0 auto;
     }
+
+
+
+
+.footer-bg {
+	background-color: #243038;
+}
+.footer ul li {
+	list-style-type: none;
+	line-height: 30px;
+}
+.footer ul li a, .footer ul li address, .footer-last a {
+	text-decoration: none;
+	color: #F6F6F6;
+}
+.footer ul li b {
+	color: #F2BA45;
+}
+.footer-last {
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 0px;
+	text-align: center;
+	background-color: #243038;
+	color: #F6F6F6;
+}
+
+.Break-Line-shade {
+	width: 85%;
+	margin: 50px auto;
+	height: 1px;
+	background-color: #D9DADB;
+}
+
+
+@media only screen and (max-width: 959px){	
+	.footer {
+		text-align: center;
+	}
+}
