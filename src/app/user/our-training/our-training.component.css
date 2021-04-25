@@ -113,3 +113,25 @@
 	background-color: #243038;
 	color: #F6F6F6;
 }
+
+
+.lead-1 {
+	display: grid;
+	justify-content: center;
+	width: 300px;
+	padding: 15px;
+	background-color: bisque;
+	border-radius: 3px;
+	box-shadow: 3px 4px 4px 1px #909aa9;
+}
+.lead-1 h5 {
+	color: #243038
+}
+
+.lead {
+	margin-top: 40px;
+}
+
+.lead a {
+ text-decoration: none;
+}

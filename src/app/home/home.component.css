@@ -27,3 +27,77 @@
 		text-align: center;
 	}
 }
+
+
+.icon-center {
+	text-align: center;
+}
+.icons {
+	margin-bottom: 50px;
+}
+
+.icon-over:hover {
+	box-shadow: 1px 1px 1px 1px #B2B2B2;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.icon-over {
+	padding: 15px;
+	border-radius: 4px;
+}
+
+.icon-over h3 {
+	width: 145px;
+}
+
+.service-heading h4 {
+	text-align: center;
+	font-size: 30px;
+	color: #44A0A5;
+	margin-top: 80px;
+	line-height: 42px;
+}
+
+.about {
+	text-align: center;
+	font-size: 16px;
+	line-height: 30px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.btn-center {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.Break-Line-shade {
+	width: 85%;
+	margin: 50px auto;
+	height: 1px;
+	background-color: #D9DADB;
+}
+
+
+.lead-1 {
+	display: grid;
+	justify-content: center;
+	width: 300px;
+	padding: 15px;
+	background-color: bisque;
+	border-radius: 3px;
+	box-shadow: 3px 4px 4px 1px #909aa9;
+}
+.lead-1 h5 {
+	color: #243038
+}
+
+.lead {
+	margin-top: 40px;
+}
+
+.lead a {
+ text-decoration: none;
+}

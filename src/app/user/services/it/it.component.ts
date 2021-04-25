@@ -15,6 +15,7 @@ export class ItComponent implements OnInit {
   showMore = false;
   responsive = true;
   cols = 1;
+   current = 0;
 
   serviceObj = new Service();
   serviceNameSelected: any= [];

@@ -7,44 +7,111 @@
         </ng-container>
     </div>
  </div>
- <div class="row">
-    <div class="container">
-        <mat-grid-list rowHeight="1:0.4" 
-    [responsive]="responsive"
-    (responsiveColsChange)="cols = $event">
 
-            <mat-grid-tile class="border-right">
-                <div class="center">
-                <b class="bold">250+</b> <br>
-                HAPPY CLIENTS
-            </div>
-                
-            </mat-grid-tile>
-            <mat-grid-tile class="border-right-2">
-                <div class="center">
-                    <b class="bold">200+</b> <br>
-                    STUDENT PLACEMENTS
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile class="border-right">
-                <div class="center">
-                    <b class="bold">29+</b> <br>
-                    RUNNING PROJECTS
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="center">
-                    <b class="bold">800+</b> <br>
-                    STUDENTS
-                </div>
-            </mat-grid-tile>
-        </mat-grid-list>
-    </div>
+
+
+
+
+
+
+
+
+<div class="service-heading"><h4>We Work for the Best</h4></div>
+<p class="about">
+	To ensure your company has a reachable online presence – an e-commerce website can work wonders and make that wonder into a reality, we are there to serve you right. We are a result-driven agency serving educational, corporate, travel, industry, real estate, etc. ranging from B2B, B2C, or a hybrid model.<br>
+
+      We aim to create websites that help you maximize your business revenue through online sales of products and services.
+</p>
+<div class="btn-center">
+	<button mat-flat-button color="primary">Know more about Addvic</button>
 </div>
 
 
-  
-<div class="clear"></div>
+<div class="Break-Line-shade"></div>
+
+
+
+
+
+
+
+<div class="service-heading"><h4>What We Offer?</h4></div>
+
+    <section class="icons">
+        <div class="icon-center">
+            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+                <div class="icon-over">
+                    <a [routerLink]="['/it/service']" routerLinkActive="router-link-active"><img src="../../assets/IT_Service_Icon.svg" alt="" width="80px" height="80px"></a>
+                    <h3>IT Services <small>(Ex: Web Design & Development)</small></h3>
+                    </div>
+                    <div class="icon-over">
+                    <a [routerLink]="['/digital/service']" routerLinkActive="router-link-active">
+						<img src="../../assets/Digital_Service_Icon.svg" alt="" width="80px" height="80px"></a>
+                    <h3>Digital Marketing Services</h3>
+                    </div>
+                    <div class="icon-over">
+                    <a [routerLink]="['//graphics/service']" routerLinkActive="router-link-active"><img src="../../assets/Graphics_Service_Icon.svg" alt="" width="80px" height="80px"></a>
+                    <h3>Graphics Design & Video Editing</h3>
+                    </div>
+                    <div class="icon-over">
+                    <a [routerLink]="['/mechanical/service']" routerLinkActive="router-link-active"><img src="../../assets/Mechanical_Service_Icon.svg" alt="" width="80px" height="80px"></a>
+                    <h3>Mechanical Services</h3>
+                    </div>
+                    </div>
+                    </div>
+        </section>
+
+
+<div class="Break-Line-shade"></div>
+
+
+<div class="service-heading"><h4>We Provide Job Oriented Courses as well as Internships</h4></div>
+
+    <section class="icons">
+        <div class="icon-center">
+            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" fxLayoutGap="50px">
+                <div class="icon-over">
+                    <a [routerLink]="['/mechanical/courses']" routerLinkActive="router-link-active"><img src="../../../assets/Mech_Icon.svg" alt="" width="80px" height="80px"></a>
+                    <h3>Mechanical Domain Courses</h3>
+                    </div>
+                    <div class="icon-over">
+                    <a [routerLink]="['/it/courses']" routerLinkActive="router-link-active">
+						<img src="../../../assets/IT-icon.svg" alt="" width="80px" height="80px"></a>
+                    <h3>IT Courses / Programming</h3>
+                    </div>
+                    <div class="icon-over">
+                    <a [routerLink]="['/graphic/service']" routerLinkActive="router-link-active"><img src="../../../assets/Digital-Marketing.svg" alt="" width="80px" height="80px"></a>
+                    <h3>Digital Marketing & Graphics Design</h3>
+                    </div>
+                    <div class="icon-over">
+                    <a [routerLink]="['/intern/service']" routerLinkActive="router-link-active"><img src="../../../assets/Internship.svg" alt="" width="80px" height="80px"></a>
+                    <h3>Internship in various Domain</h3>
+                    </div>
+                    </div>
+                    </div>
+        </section>
+
+
+
+
+
+<div class="Break-Line-shade"></div>
+
+
+<div fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center center" fxLayoutGap="50px" class="lead">
+	<a [routerLink]="['/intern/service']" routerLinkActive="router-link-active"><div class="lead-1">
+		<h5 class="form-heading">Book your seat now for our upcomming webinars.</h5>
+		<button mat-flat-button color="primary" type="button">Upcomming Webinars</button>
+	</div></a>
+</div>
+
+
+<div class="Break-Line-shade"></div>
+
+
+
+
+
 
 
  <section>
@@ -115,3 +182,13 @@
         All Rights Reserved &copy; <a routerLink="/home">Addvic Technology (OPC) Pvt Ltd.</a>
         </div>
         </section>
+
+
+
+
+
+
+
+
+
+

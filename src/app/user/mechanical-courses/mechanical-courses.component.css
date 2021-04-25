@@ -19,6 +19,23 @@
 	color: #F2BA45;
 }
 
+.lead-1 {
+	display: grid;
+	justify-content: center;
+	width: 300px;
+	padding: 15px;
+	background-color: bisque;
+	border-radius: 3px;
+	box-shadow: 3px 4px 4px 1px #909aa9;
+}
+.lead-1 h5 {
+	color: #243038
+}
+
+.lead {
+	margin-top: 40px;
+}
+
 .btn-center {
 	display: grid;
 	margin: 40px auto;
@@ -135,7 +152,7 @@ input::placeholder, mat-label {
 	list-style-type: none;
 	line-height: 30px;
 }
-.footer ul li a, .footer ul li address, .footer-last a {
+.footer ul li a, .footer ul li address, .footer-last a, .lead a {
 	text-decoration: none;
 	color: #F6F6F6;
 }

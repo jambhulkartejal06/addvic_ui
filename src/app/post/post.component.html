@@ -1,6 +1,6 @@
-<section class="blog">
-            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" fxLayoutGap="50px" *ngFor="let post of posts">
-				
+<section >
+            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" fxLayoutGap="50px" *ngFor="let post of posts" class="blog">
+
 				<div class="info">
 					<h1><a href="/getpost/{{post.id}}" class="blog-title">{{post.title}}</a></h1>
 					<i class="fa fa-user"><span> Author : {{post.username}}</span></i> 

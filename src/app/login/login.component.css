@@ -1,4 +1,4 @@
-.example-card {
+/*.example-card {
     max-width: 480px;
     margin-left: 401px;
     margin-top: 80px;
@@ -46,3 +46,66 @@ mat-card {
   .ml-10 {
     margin-left: 10px;
   }
+*/
+
+.box-1, .box-2 {
+	width: 50%;
+	justify-content: center;
+	display: flex;
+}
+
+.box-1 img {
+	width: 80%;
+}
+
+.service-heading h4 {
+	text-align: center;
+	font-size: 30px;
+	color: #44A0A5;
+	margin-top: 80px;
+	line-height: 42px;
+}
+
+@media only screen and (max-width: 959px){	
+	.box-2 {
+	margin-top: -100px
+}
+	.box-1 img {
+	width: 100%;
+}
+	.footer {
+		text-align: center;
+	}
+}
+
+
+
+.footer-bg {
+	background-color: #243038;
+}
+.footer ul li {
+	list-style-type: none;
+	line-height: 30px;
+}
+.footer ul li a, .footer ul li address, .footer-last a {
+	text-decoration: none;
+	color: #F6F6F6;
+}
+.footer ul li b {
+	color: #F2BA45;
+}
+.footer-last {
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px 0px;
+	text-align: center;
+	background-color: #243038;
+	color: #F6F6F6;
+}
+
+.Break-Line-shade {
+	width: 85%;
+	margin: 50px auto;
+	height: 1px;
+	background-color: #D9DADB;
+}
