@@ -2,6 +2,49 @@
   color: #263238;
   
 }
-.content{
-padding:0px 25px;
+
+.info {
+	text-align: center;
+	background-color: #243038;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.info a, .info i {
+	text-decoration: none;
+	color: #F2BA45;
+}
+
+.content {
+	padding: 0px 10px;
+	text-align: left;
+}
+
+.content span {
+	text-decoration: none;
+}
+
+.blog {
+	padding: 15px;
+	background-color: #E8E5E5;
+	width: 92%;
+	margin: 10px auto;
+	border-radius: 5px;
+	box-shadow: 1px 2px 2px 1px #9F9E9E;
+}
+.content b {
+	font-size: 50px;
+}
+
+.quote {
+	float: left;
+	font-size: 50px;
+	font-family: cursive;
+	padding-right: 15px;
+}
+
+@media only screen and (max-width: 959px){
+	.content {
+	text-align: center;
+}
 }
